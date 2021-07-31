@@ -12,22 +12,22 @@
         <img src="img/logo-pink-white.svg" width="74" height="23" alt="Логотип сайта">
       </a>
       <nav class="page-header__nav nav">
-        <button class="header-nav__toggle" type="button">
+        <button class="page-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="header-nav__wrapper">
-          <ul class="header-nav__list">
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="#">Главная</a>
+        <div class="page-header__wrapper">
+          <ul class="page-header__list">
+            <li class="page-header__item">
+              <a class="page-header__link" href="#">Главная</a>
             </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="#">Фотографии</a>
+            <li class="page-header__item">
+              <a class="page-header__link" href="#">Фотографии</a>
             </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="#">Конкурс</a>
+            <li class="page-header__item">
+              <a class="page-header__link" href="#">Конкурс</a>
             </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="#">HTML Academy</a>
+            <li class="page-header__item">
+              <a class="page-header__link" href="#">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -95,8 +95,8 @@
         <ul class="reviews__list slider__list">
           <li class="reviews__item slider__item">
             <div class="reviews__author">
-              <p class="author__name">Николай Петров</p>
-              <p class="author__post">25 лет, водитель трамвая</p>
+              <p class="reviews__author-name">Николай Петров</p>
+              <p class="reviews__author-post">25 лет, водитель трамвая</p>
             </div>
             <blockquote class="reviews__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
           </li>
@@ -111,54 +111,54 @@
 
       <section class="price wrapper slider">
         <h2 class="visually-hidden">Прайс</h2>
-        <table class="price__list slider__list" border="1">
-          <tr>
-            <th class="slider__item1 slider__item2 slider__item3"></th>
-            <th class="slider__item1">
+        <table class="price__list slider__list">
+          <tr class="slider__item">
+            <th class="price__name"></th>
+            <td>
               <header class="price__rate">
                 <p class="rate-name">База</p>
                 <p class="rate-cost">1,99 USD</p>
               </header>
-            </th>
-            <th class="slider__item2">
+            </td>
+            <td>
               <header class="price__rate">
                 <p class="rate-name">Стандарт</p>
                 <p class="rate-cost">3,99 USD</p>
               </header>
-            </th>
-            <th class="slider__item3">
+            </td>
+            <td>
               <header class="price__rate">
                 <p class="rate-name">Анлим</p>
                 <p class="rate-cost">9,99 USD</p>
               </header>
-            </th>
+            </td>
           </tr>
-          <tr>
-            <th class="price__name slider__item1 slider__item2 slider__item3">Розовый фильтр</th>
-            <th class="price__value slider__item1"><img src="img/yes.svg" width="31" height="21"
-                alt="Да"></th>
-            <th class="price__value slider__item2"><img src="img/yes.svg" width="31" height="21"
-                alt="Да"></th>
-            <th class="price__value slider__item3"><img src="img/yes.svg" width="31" height="21"
-                alt="Да"></th>
+          <tr class="slider__item">
+            <th class="price__name">Розовый фильтр</th>
+            <td class="price__value"><img src="img/yes.svg" width="31" height="21"
+                alt="Да"></td>
+            <td class="price__value"><img src="img/yes.svg" width="31" height="21"
+                alt="Да"></td>
+            <td class="price__value"><img src="img/yes.svg" width="31" height="21"
+                alt="Да"></td>
           </tr>
-          <tr>
-            <th class="price__name slider__item1 slider__item2 slider__item3">Смайлики</th>
-            <th class="price__value slider__item1"><img src="img/no.svg" width="27" height="27"
-                alt="Нет"></th>
-            <th class="price__value slider__item2"><img src="img/yes.svg" width="31" height="21"
-                alt="Да"></th>
-            <th class="price__value slider__item3"><img src="img/yes.svg" width="31" height="21"
-                alt="Да"></th>
+          <tr class="slider__item">
+            <th class="price__name">Смайлики</th>
+            <td class="price__value"><img src="img/no.svg" width="27" height="27"
+                alt="Нет"></td>
+            <td class="price__value"><img src="img/yes.svg" width="31" height="21"
+                alt="Да"></td>
+            <td class="price__value"><img src="img/yes.svg" width="31" height="21"
+                alt="Да"></td>
           </tr>
-          <tr>
-            <th class="price__name slider__item1 slider__item2 slider__item3">Комментарии</th>
-            <th class="price__value slider__item1"><img src="img/no.svg" width="27" height="27"
-                alt="Нет"></th>
-            <th class="price__value slider__item2"><img src="img/no.svg" width="27" height="27"
-                alt="Нет"></th>
-            <th class="price__value slider__item3"><img src="img/yes.svg" width="31" height="21"
-                alt="Да"></th>
+          <tr class="slider__item">
+            <th class="price__name">Комментарии</th>
+            <td class="price__value"><img src="img/no.svg" width="27" height="27"
+                alt="Нет"></td>
+            <td class="price__value"><img src="img/no.svg" width="27" height="27"
+                alt="Нет"></td>
+            <td class="price__value"><img src="img/yes.svg" width="31" height="21"
+                alt="Да"></td>
           </tr>
         </table>
         <p class="price__toggles slider__toggles">
@@ -186,7 +186,7 @@
 
         <section class="map">
           <h2 class="visually-hidden">Карта</h2>
-          <map></map>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603786922325!2d30.321220184365952!3d59.93871648736825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627755832840!5m2!1sru!2sru" width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
     </main>
 
