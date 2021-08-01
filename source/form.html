@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>HTML Academy: Формы Пинк</title>
+  </head>
+
+  <body class="page__body">
+    <header class="page-header wrapper">
+      <a class="page-header__logo logo" href="#">
+        <img src="img/logo-pink-white.svg" width="74" height="23" alt="Логотип сайта">
+      </a>
+      <nav class="page-header__nav nav">
+        <button class="page-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="page-header__wrapper">
+          <ul class="page-header__list">
+            <li class="page-header__item">
+              <a class="page-header__link" href="index.html">Главная</a>
+            </li>
+            <li class="page-header__item">
+              <a class="page-header__link" href="catalog.html">Фотографии</a>
+            </li>
+            <li class="page-header__item">
+              <a class="page-header__link">Конкурс</a>
+            </li>
+            <li class="page-header__item">
+              <a class="page-header__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-form wrapper">
+      <h1 class="page-form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <section class="post wrapper">
+        <p class="post__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span>Пожалуйста, заполните форму ниже:</span></p>
+      </section>
+      <form class="form-container" method="post" action="https://echo.htmlacademy.ru">
+        <section class="author wrapper">
+          <div class="author__item">
+            <label class="author__surname-label" for="surname">ФАМИЛИЯ:</label>
+            <div class="author__surname">
+              <input class="author__surname-input" id="surname" type="text" name="surname" placeholder="Укажите фамилию *" required>
+            </div>
+          </div>
+          <div class="author__item">
+            <label class="author__name-label" for="name">ИМЯ:</label>
+            <div class="author__name">
+              <input class="author__name-input" id="name" type="text" name="name" placeholder="Введите ваше имя *" required>
+            </div>
+          </div>
+          <div class="author__item">
+            <label class="author__patronymic-label" for="patronymic">ОТЧЕСТВО:</label>
+            <div class="author__patronymic">
+              <input class="author__patronymic-input" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже" required>
+            </div>
+          </div>
+        </section>
+        <section class="achievements wrapper">
+          <fieldset>
+            <legend class="achievements__title">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="achievements__list">
+              <li class="achievements__checkbox">
+                <input class="achievements__input" type="checkbox" name="selfie-with-shark" id="selfie-with-shark" checked>
+                <label for="selfie-with-shark">Сделал селфи с акулой</label>
+              </li>
+              <li class="achievements__checkbox">
+                <input class="achievements__input" type="checkbox" name="burned-on-beach" id="burned-on-beach" checked>
+                <label for="burned-on-beach">Обгорел на пляже</label>
+              </li>
+              <li class="achievements__checkbox">
+                <input class="achievements__input" type="checkbox" name="saw-Chuck-Norris" id="saw-Chuck-Norris">
+                <label for="saw-Chuck-Norris">Видел Чака Норриса</label>
+              </li>
+              <li class="achievements__checkbox">
+                <input class="achievements__input" type="checkbox" name="bought-some-souvenirs" id="bought-some-souvenirs">
+                <label for="bought-some-souvenirs">Накупил сувениров</label>
+              </li>
+              <li class="achievements__checkbox">
+                <input class="achievements__input" type="checkbox" name="held-tower" id="held-tower" checked>
+                <label for="held-tower">Удержал башню</label>
+              </li>
+              <li class="achievements__checkbox">
+                <input class="achievements__input" type="checkbox" name="trashed-hotel" id="trashed-hotel">
+                <label for="trashed-hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+        </section>
+        <section class="author-contacts wrapper">
+          <div class="author-contacts__item">
+            <label class="author-contacts__phone-label" for="phone">НОМЕР ТЕЛЕФОНА</label>
+            <div class="author-contacts__phone">
+              <input class="author-contacts__phone" id="phone" type="text" name="phone" placeholder="Номер, пожалуйста" required>
+            </div>
+          </div>
+          <div class="author-contacts__item">
+            <label class="author-contacts__address-label" for="address">АДРЕС ПОЧТЫ</label>
+            <div class="author-contacts__address">
+              <input class="author-contacts__address" id="address" type="text" name="address" placeholder="Введите почту *" required>
+            </div>
+          </div>
+        </section>
+        <section class="apps wrapper">
+          <fieldset>
+            <legend class="apps__title">С каким приложением путешествовали?</legend>
+            <ul class="apps__list">
+              <li class="apps__radio">
+                <input class="apps__input" type="radio" name="ios" id="ios"  value="ios" checked>
+                <label for="ios">Pink для iOS</label>
+              </li>
+              <li class="apps__radio">
+                <input class="apps__input" type="radio" name="android" id="android"  value="android">
+                <label for="ios">Pink на Android</label>
+              </li>
+              <li class="apps__radio">
+                <input class="apps__input" type="radio" name="windows-phone" id="windows-phone"  value="windows-phone">
+                <label for="windows-phone">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+        </section>
+        <section class="feeling wrapper">
+          <div class="feeling__item">
+            <label class="feeling__label" for="feeling">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
+            <div class="feeling__text">
+              <input class="feeling__input" id="feeling" type="text" name="feeling" placeholder="Можно прям в красках, не стесняясь в выражениях" required>
+            </div>
+          </div>
+        </section>
+        <section class="submit wrapper">
+          <button class="submit__button button" type="submit">Отправить форму</button>
+          <div class="submit__comment">* — обязательные поля</div>
+        </section>
+      </form>
+    </main>
+
+    <footer class="page-footer wrapper">
+      <div class="page-footer__logo logo" href="#">
+        <img src="img/glasses.svg" width="59" height="40" alt="Картинка логотипа сайта">
+        <img src="img/logo-pink-dark.svg" width="74" height="23" alt="Логотип сайта">
+      </div>
+      <div class="page-footer__social-networks">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="social-networks__list">
+          <li class="social-networks__item">
+            <a class="social-networks__link social__link--twitter" href="https://www.twitter.com/htmlacademy" aria-label="Логотип Twitter">
+            </a>
+          </li>
+          <li class="social-networks__item">
+            <a class="social-networks__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Логотип Facebook">
+            </a>
+          </li>
+          <li class="social-networks__item">
+            <a class="social-networks__link social__link--youtube" href="https://www.youtube.com/htmlacademy" aria-label="Логотип Youtube">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img href="https://htmlacademy.ru/study" src="img/html-academy.svg" width="74" height="23" alt="Логотип htmlacademy">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
