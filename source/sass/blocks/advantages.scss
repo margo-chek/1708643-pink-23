@@ -1,0 +1,36 @@
+.advantages {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: $mobile;
+  height: 999px;
+  text-align: center;
+  align-items: center;
+  background-color: $color-grey-background;
+
+  @media (min-width: $tablet) {
+    width: 660px;
+    height: 110px;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+    height: 110px;
+  }
+}
+
+.advantages-block {
+  background-color: $color-white;
+}
+
+.advantages__list {
+  padding: 0 15px;
+}
+
+.advantages__item {
+  list-style-type: none;
+}
+
+.advantages__img {
+  z-index: 0;
+}

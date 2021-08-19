@@ -1,0 +1,37 @@
+.apps {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: $mobile;
+  height: 733px;
+
+  @media (min-width: $tablet) {
+    width: 660px;
+    height: 110px;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+    height: 110px;
+  }
+}
+
+.app__fieldset {
+  border: none;
+}
+
+.app__headline {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.app__item {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.app__item::marker {
+  font-size: 0;
+}

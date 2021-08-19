@@ -1,0 +1,30 @@
+.reviews {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: $mobile;
+    height: 364px;
+    background-color: $color-white;
+    z-index: 99;
+    align-items: center;
+    text-align: center;
+
+    @media (min-width: $tablet) {
+        width: 660px;
+        height: 110px;
+        display: flex;
+    }
+
+    @media (min-width: $desktop) {
+        width: $desktop;
+        height: 110px;
+    }
+}
+
+.reviews__list {
+    padding: 0 15px;
+}
+
+.reviews__item  {
+    list-style-type: none;
+}

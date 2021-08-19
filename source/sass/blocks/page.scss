@@ -1,8 +1,25 @@
 .page__body {
-  margin: 0;
-  min-width: 320px;
-  overflow-x: hidden;
-  font-family: $font;
-  background-color: #fff;
-  color: green;
+    margin: 0 auto;
+    min-width: $mobile;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: $font;
+    height: 100%;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-white;
+    color: $color-grey;
+
+    @media (min-width: $tablet) {
+      width: 660px;
+      height: 110px;
+      display: flex;
+    }
+
+    @media (min-width: $desktop) {
+      width: $desktop;
+      height: 110px;
+    }
 }

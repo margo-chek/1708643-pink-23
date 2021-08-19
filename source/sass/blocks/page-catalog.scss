@@ -1,0 +1,22 @@
+.page-catalog {
+  position: relative;
+  background-color: $color-white;
+  color: $color-grey;
+  margin-top: 66px;
+}
+
+.page-catalog__title {
+  color: $color-white;
+  background-image: url("../img/background-mobile.jpg");
+  background-position: center;
+  background-color: $color-grey-background;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100%;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  height: 237px;
+  padding-top: 102px;
+}

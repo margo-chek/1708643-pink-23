@@ -1,0 +1,55 @@
+.edit {
+    background-color: $color-grey-background;
+    padding: 20px 20px 75px;
+}
+
+.edit__tool-list {
+    display: flex;
+    margin-top: 42px;
+}
+
+.edit__tool-item {
+    position: relative;
+}
+
+.edit__tool-item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.edit__range-controls {
+    display: none;
+    height: 41px;
+    margin-bottom: 8px;
+    padding: 20px 0 0 16px;
+    background-color: transparent;
+    position: relative;
+}
+
+.edit__range-controls--active {
+    display: block;
+    height: 41px;
+    margin-bottom: 27px;
+    padding: 40px 0 0 16px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 240px;
+    left: 20px;
+}
+
+.edit__scale {
+    height: 2px;
+    width: 240px;
+    background-color: $color-grey;
+}
+
+.edit__toggle {
+    position: absolute;
+    top: 32px;
+    left: 208px;
+    width: 14px;
+    height: 14px;
+    padding: 0;
+    border: 2px solid $color-magenta;
+    background-color: $color-white;
+    border-radius: 50%;
+}

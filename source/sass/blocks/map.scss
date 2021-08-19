@@ -1,0 +1,36 @@
+.map {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: $mobile;
+  height: 200px;
+  position: relative;
+  top: 75px;
+  margin-bottom: 75px;
+
+  @media (min-width: $tablet) {
+    width: 660px;
+    height: 110px;
+    display: flex;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+    height: 110px;
+  }
+
+  &::before {
+    content: "";
+    background-image: url("../img/triangle-map.svg");
+    position: absolute;
+    bottom: 113px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+    height: 123px;
+    overflow-x: hidden;
+    display: none;
+  }
+}

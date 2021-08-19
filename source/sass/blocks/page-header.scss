@@ -1,0 +1,39 @@
+.page-header {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 386px;
+    margin: 0 auto;
+    flex-direction: column;
+
+  @media (min-width: $tablet) {
+      width: 660px;
+      height: 110px;
+  }
+
+  @media (min-width: $desktop) {
+      width: $desktop;
+      height: 110px;
+  }
+}
+
+.page-header__logo {
+    background-color: $color-black;
+    opacity: 0.5;
+    height: 23px;
+    min-width: $mobile;
+    width: 74px;
+    padding-top: 22px;
+    padding-bottom: 21px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.page-header__nav {
+    outline: 5px solid rgba(0, 255, 0, 0.8);
+    outline-offset: -5px;
+    height: 325px;
+    min-width: $mobile;
+    width: 100%;
+}
