@@ -4,6 +4,7 @@
     width: 100%;
     min-width: $mobile;
     height: 100%;
+    position: relative;
 
     @media (min-width: $tablet) {
         width: 660px;

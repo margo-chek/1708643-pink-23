@@ -1,9 +1,10 @@
 .apps {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
   min-width: $mobile;
-  height: 733px;
+  margin-top: -66px;
 
   @media (min-width: $tablet) {
     width: 660px;
@@ -14,6 +15,22 @@
     width: $desktop;
     height: 110px;
   }
+}
+
+.apps__title {
+  color: $color-white;
+  background-image: url("../img/back-mobile.jpg");
+  background-position: center;
+  background-color: $color-grey-background;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100%;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  // height: 237px;
+  padding-top: 95px;
 }
 
 .app__fieldset {
