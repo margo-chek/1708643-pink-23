@@ -22,8 +22,10 @@
   &::before {
     content: "";
     background-image: url("../img/triangle-map.svg");
+    background-position: center top -80px;
+    background-repeat: no-repeat;
     position: absolute;
-    bottom: 113px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -31,6 +33,17 @@
     max-width: 1200px;
     height: 123px;
     overflow-x: hidden;
-    display: none;
+  }
+}
+
+.map iframe {
+  @media (min-width: $tablet) {
+    width: 660px;
+    height: 374px
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+    height: 502px;
   }
 }

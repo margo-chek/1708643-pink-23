@@ -1,0 +1,58 @@
+.author {
+  background-color: $color-white;
+  padding-bottom: 15px;
+}
+
+.author__item {
+  display: flex;
+  flex-direction: column;
+  font-weight: normal;
+  line-height: 30px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+  }
+}
+
+.author__surname-label,
+.author__name-label,
+.author__patronymic-label {
+  color: $color-magenta;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 43px;
+}
+
+.author__surname,
+.author__name,
+.author__patronymic {
+  margin: 17px 22px 29px;
+}
+
+.author__surname-input,
+.author__name-input,
+.author__patronymic-input {
+  padding: 23px 20px;
+}
+
+input::-webkit-input-placeholder {
+  color: $color-grey;
+  font-size: 18px;
+}
+
+input::-moz-placeholder {
+  color: $color-grey;
+  font-size: 18px;
+}
+
+/* Firefox 19+ */
+input:-moz-placeholder {
+  color: $color-grey;
+  font-size: 18px;
+}
+
+/* Firefox 18- */
+input:-ms-input-placeholder {
+  color: $color-grey;
+  font-size: 18px;
+}

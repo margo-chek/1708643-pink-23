@@ -41,32 +41,46 @@
       <h1 class="visually-hidden">Мобильное приложение Пинк - раскрась серые будни в розовый цвет!</h1>
       <section class="apps wrapper">
         <h2 class="apps__title">Взгляните на жизнь иначе!</h2>
-        <img class="apps__img" src="img/phone.jpg" width="320" height="286"
+        <img class="apps__img" src="img/phone-group.png" width="320" height="286"
                 alt="Телефон">
-        <a class="apps__button button" href="#">Скачать приложение</a>
-        <div class="apps__select">
-          <ul class="apps__list">
-            <li class="apps__item">
-              <a class="apps__link" href="#" aria-label="Логотип Apple">
-              </a>
-            </li>
-            <li class="apps__item">
-              <a class="apps__link" href="#" aria-label="Логотип Android">
-              </a>
-            </li>
-            <li class="apps__item">
-              <a class="apps__link" href="#" aria-label="Логотип Microsoft">
-              </a>
-            </li>
-          </ul>
+        <div class="apps__mobile">
+          <a class="apps__button button" href="#">Скачать приложение</a>
+          <div class="apps__select">
+            <ul class="apps__list">
+              <li class="apps__item">
+                <a class="apps__link" href="#" aria-label="Логотип Apple">
+                  <span class="visually-hidden">Apple</span>
+                  <svg width="47" height="56">
+                    <use xlink:href="img/sprite.svg#apple-logo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="apps__item">
+                <a class="apps__link" href="#" aria-label="Логотип Android">
+                  <span class="visually-hidden">Android</span>
+                  <svg width="43" height="47">
+                    <use xlink:href="img/sprite.svg#android-logo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="apps__item">
+                <a class="apps__link" href="#" aria-label="Логотип Microsoft">
+                  <span class="visually-hidden">Microsoft</span>
+                  <svg width="44" height="41">
+                    <use xlink:href="img/sprite.svg#microsoft-logo"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="apps__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-        <p class="apps__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
 
       <section class="advantages wrapper">
         <div class="advantages-block">
           <h2 class="advantages-title">Устали от серости мегаполиса?</h2>
-          <h2 class="advantages-title">Нам есть, что вам предложить!</h2>
+          <h2 class="advantages-title">Нам есть, что вам<br>предложить!</h2>
         </div>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--mood">
@@ -82,7 +96,7 @@
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img class="advantages__img" src="img/iphone-mobile.png" width="157" height="320"
+        <img class="advantages__img" src="img/iphone-mobile-group.png" width="157" height="320"
                 alt="Телефон">
       </section>
 
@@ -106,12 +120,11 @@
             </div>
             <blockquote class="reviews__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
           </li>
-
         </ul>
         <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle slider__toggle--current" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+          <button class="slider__toggle slider__toggle--current" type="button"></button>
+          <button class="slider__toggle" type="button"></button>
+          <button class="slider__toggle" type="button"></button>
         </p>
       </section>
 
@@ -141,36 +154,36 @@
           </tr>
           <tr class="slider__item">
             <th class="price__name">Розовый фильтр</th>
-            <td class="price__value"><img src="img/yes.svg" width="31" height="21"
+            <td class="price__value"><span class="price__name--mobile">Розовый фильтр</span><img src="img/yes.svg" width="31" height="21"
                 alt="Да"></td>
-            <td class="price__value"><img src="img/yes.svg" width="31" height="21"
+            <td class="price__value"><span class="price__name--mobile">Розовый фильтр</span><img src="img/yes.svg" width="31" height="21"
                 alt="Да"></td>
-            <td class="price__value"><img src="img/yes.svg" width="31" height="21"
+            <td class="price__value"><span class="price__name--mobile">Розовый фильтр</span><img src="img/yes.svg" width="31" height="21"
                 alt="Да"></td>
           </tr>
           <tr class="slider__item">
             <th class="price__name">Смайлики</th>
-            <td class="price__value"><img src="img/no.svg" width="27" height="27"
+            <td class="price__value"><span class="price__name--mobile">Смайлики</span><img src="img/no.svg" width="27" height="27"
                 alt="Нет"></td>
-            <td class="price__value"><img src="img/yes.svg" width="31" height="21"
+            <td class="price__value"><span class="price__name--mobile">Смайлики</span><img src="img/yes.svg" width="31" height="21"
                 alt="Да"></td>
-            <td class="price__value"><img src="img/yes.svg" width="31" height="21"
+            <td class="price__value"><span class="price__name--mobile">Смайлики</span><img src="img/yes.svg" width="31" height="21"
                 alt="Да"></td>
           </tr>
           <tr class="slider__item">
             <th class="price__name">Комментарии</th>
-            <td class="price__value"><img src="img/no.svg" width="27" height="27"
+            <td class="price__value"><span class="price__name--mobile">Комментарии</span><img src="img/no.svg" width="27" height="27"
                 alt="Нет"></td>
-            <td class="price__value"><img src="img/no.svg" width="27" height="27"
+            <td class="price__value"><span class="price__name--mobile">Комментарии</span><img src="img/no.svg" width="27" height="27"
                 alt="Нет"></td>
-            <td class="price__value"><img src="img/yes.svg" width="31" height="21"
+            <td class="price__value"><span class="price__name--mobile">Комментарии</span><img src="img/yes.svg" width="31" height="21"
                 alt="Да"></td>
           </tr>
         </table>
         <p class="price__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle slider__toggle--current" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+          <button class="slider__toggle" type="button"></button>
+          <button class="slider__toggle slider__toggle--current" type="button"></button>
+          <button class="slider__toggle" type="button"></button>
         </p>
       </section>
 
@@ -209,8 +222,7 @@
           <li class="social-networks__item">
             <a class="social-networks__link social__link--twitter" href="https://www.twitter.com/htmlacademy" aria-label="Логотип Twitter">
               <span class="visually-hidden">Твиттер</span>
-              <svg>
-                <use xlink:href="img/sprite.svg#circle-social-networks"></use>
+              <svg width="54" height="54">
                 <use xlink:href="img/sprite.svg#twitter-icon"></use>
               </svg>
             </a>
@@ -218,8 +230,7 @@
           <li class="social-networks__item">
             <a class="social-networks__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Логотип Facebook">
               <span class="visually-hidden">Фейсбук</span>
-              <svg>
-                <use xlink:href="img/sprite.svg#circle-social-networks"></use>
+              <svg width="54" height="54">
                 <use xlink:href="img/sprite.svg#facebook-icon"></use>
               </svg>
             </a>
@@ -227,8 +238,7 @@
           <li class="social-networks__item">
             <a class="social-networks__link social__link--youtube" href="https://www.youtube.com/htmlacademy" aria-label="Логотип Youtube">
               <span class="visually-hidden">Ютуб</span>
-              <svg>
-                <use xlink:href="img/sprite.svg#circle-social-networks"></use>
+              <svg width="54" height="54">
                 <use xlink:href="img/sprite.svg#youtube-icon"></use>
               </svg>
             </a>
@@ -238,7 +248,7 @@
       <div class="page-footer__copyright copyright">
         <div class="copyright__text">Разработано</div>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg>
+          <svg width="27" height="34">
             <use xlink:href="img/sprite.svg#htmlacademy-logo"></use>
           </svg>
         </a>

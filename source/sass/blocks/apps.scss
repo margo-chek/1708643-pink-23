@@ -5,6 +5,11 @@
   width: 100%;
   min-width: $mobile;
   margin-top: -66px;
+  background-image: url("../img/back-mobile.jpg");
+  background-position: center;
+  background-color: $color-grey-background;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @media (min-width: $tablet) {
     width: 660px;
@@ -19,18 +24,67 @@
 
 .apps__title {
   color: $color-white;
-  background-image: url("../img/back-mobile.jpg");
-  background-position: center;
-  background-color: $color-grey-background;
-  background-repeat: no-repeat;
-  object-fit: cover;
   width: 100%;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
   text-align: center;
-  // height: 237px;
-  padding-top: 95px;
+  padding: 95px 20px 34px;
+}
+
+.apps__mobile {
+  background-color: $color-grey;
+
+  @media (min-width: $tablet) {
+    background-color: inherit;
+  }
+}
+
+.apps__button {
+  display: flex;
+  color: $color-white;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  border: 3px solid $color-white;
+  box-sizing: border-box;
+  border-radius: 29px;
+  margin: 28px auto 32px;
+  padding: 21px 35px;
+}
+
+.apps__select {
+  display: flex;
+}
+
+.apps__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  align-items: flex-end;
+}
+
+.apps__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.apps__link {
+  bottom: 0;
+}
+
+.apps__description {
+  display: flex;
+  margin: 24px 20px 38px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  color: $color-white;
+  padding: 0 8px;
 }
 
 .app__fieldset {

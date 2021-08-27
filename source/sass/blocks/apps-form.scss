@@ -1,0 +1,81 @@
+.apps-form {
+  background-color: $color-grey-background;
+  padding: 42px 22px;
+  color: $color-grey;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.apps-form__title {
+  color: $color-magenta;
+  text-transform: uppercase;
+  padding-bottom: 44px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.apps-form__list {
+  padding-left: 20px;
+}
+
+.apps-form__radio {
+  padding-left: 55px;
+}
+
+.apps-form__radio:not(:last-child) {
+  padding-bottom: 47px;
+}
+
+.apps-form__input {
+  display: none;
+}
+
+.apps-form__input + label::before,
+.apps-form__input:hover + label::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  width: 39px;
+  height: 39px;
+  background: $color-white;
+  border: 2px solid $color-grey-border;
+  border-radius: 50%;
+}
+
+.apps-form__input:focus + label::before {
+  background: $color-white;
+  border: 2px solid $color-grey-border;
+  border-radius: 50%;
+}
+
+.apps-form__input:checked + label::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  width: 39px;
+  height: 39px;
+  background: $color-white;
+  border: 2px solid $color-grey-border;
+  border-radius: 50%;
+}
+
+.apps-form__input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 32px;
+  margin-top: 12px;
+  width: 15px;
+  height: 15px;
+  background: $color-magenta;
+  border: none;
+  border-radius: 50%;
+}
+
+.apps-form__input:disabled + label::before {
+  background-color: $color-white;
+  border: 2px solid $color-grey-border;
+  border-radius: 50%;
+}

@@ -1,19 +1,18 @@
 .banner {
-    display: none;
-    width: 100%;
-    min-width: $mobile;
-    height: 330px;
-    flex-direction: column;
+  display: none;
+  width: 100%;
+  min-width: $mobile;
+  flex-direction: column;
 
-    @media (min-width: $tablet) {
-      width: 660px;
-      height: 110px;
-      display: flex;
-    }
+  @media (min-width: $tablet) {
+    width: 660px;
+    height: 110px;
+    display: flex;
+  }
 
-    @media (min-width: $desktop) {
-      width: $desktop;
-      height: 110px;
-      display: flex;
-    }
+  @media (min-width: $desktop) {
+    width: $desktop;
+    height: 110px;
+    display: flex;
+  }
 }

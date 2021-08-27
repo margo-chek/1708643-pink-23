@@ -1,50 +1,50 @@
 .photo-catalog__item:not(:first-child) {
-    margin: 0 20px; 
+  margin: 0 20px;
 }
 
 .photo-catalog__item:first-child .photo-catalog__description {
-    margin: 0 20px 20px; 
+  margin: 0 20px 20px;
 }
 
 .photo-catalog__description {
-    margin-bottom: 20px;
-    padding: 25px 10px 26px 17px;
-    background-color: $color-grey-background;
+  margin-bottom: 20px;
+  padding: 25px 10px 26px 17px;
+  background-color: $color-grey-background;
 }
 
 .photo-catalog__author {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 24px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .photo-catalog__author span {
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 24px;
-    text-transform: uppercase;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
 }
 
 .photo-catalog__name {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    padding: 14px 0 27px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 14px 0 27px;
 }
 
 .photo-catalog__like {
-    color: $color-magenta;
-    position: relative;
-    padding-left: 31px;
+  color: $color-magenta;
+  position: relative;
+  padding-left: 31px;
 
-    &::after {
-        position: absolute;
-        min-height: 13px;
-        width: 100%;
-        left: 0;
-        content: "";
-        bottom: 0;
-        background-image: url("../img/heart.svg");
-        background-repeat: no-repeat;
-    }
+  &::after {
+    position: absolute;
+    min-height: 13px;
+    width: 100%;
+    left: 0;
+    content: "";
+    bottom: 0;
+    background-image: url("../img/heart.svg");
+    background-repeat: no-repeat;
+  }
 }

@@ -1,90 +1,93 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
+  min-width: $mobile;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    width: 660px;
+    height: 110px;
     display: flex;
-    flex-direction: column;
-    min-width: $mobile;
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
+  }
 
-    @media (min-width: $tablet) {
-        width: 660px;
-        height: 110px;
-        display: flex;
-    }
-
-    @media (min-width: $desktop) {
-        width: $desktop;
-        height: 110px;
-    }
+  @media (min-width: $desktop) {
+    width: $desktop;
+    height: 110px;
+  }
 }
 
 .page-footer__logo {
-    display: flex;
-    position: relative;
-    margin: 40px auto 0;
-    width: 145px;
-    height: 40px;
+  display: flex;
+  position: relative;
+  margin: 40px auto 0;
+  width: 145px;
+  height: 40px;
 }
 
 .logo-glasses {
-    width: 59px;
-    height: 40px;
-    display: block;
+  width: 59px;
+  height: 40px;
+  display: block;
 }
 
 .logo-pink {
-    width: 74px;
-    height: 23px;
-    display: block;
+  width: 74px;
+  height: 23px;
+  display: block;
 }
 
 .page-footer__social-networks {
-    display: flex;
-    flex-direction: row;
-    margin: 41px auto;
+  display: flex;
+  flex-direction: row;
+  margin: 41px auto;
 }
 
 .social-networks__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 0;
 }
 
 .social-networks__item {
-    display: block;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    border-color: $color-grey;
-    background-color: $color-magenta;
-    margin-left: 15px;
+  display: block;
+  margin-left: 15px;
+  width: 48px;
+  height: 48px;
+}
+
+.social-networks__link {
+  display: block;
+  border-radius: 50%;
+  border-color: $color-grey;
 }
 
 .social-networks__item:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .page-footer__copyright {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0 auto 40px;
-    width: 130px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto 40px;
+  width: 130px;
 }
 
 .copyright__text {
-    display: flex;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    margin-right: 15px;
+  display: flex;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  margin-right: 15px;
 }
 
 .copyright__link {
-    display: flex;
-    width: 27px;
-    height: 34px;
+  display: flex;
+  width: 27px;
+  height: 34px;
 }

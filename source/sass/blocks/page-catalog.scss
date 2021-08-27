@@ -5,13 +5,15 @@
   margin-top: -66px;
 }
 
-.page-catalog__title {
-  color: $color-white;
+.page-catalog__top-block {
   background-image: url("../img/background-mobile.jpg");
   background-position: center;
-  background-color: $color-grey-background;
   background-repeat: no-repeat;
-  object-fit: cover;
+  background-size: cover;
+}
+
+.page-catalog__title {
+  color: $color-white;
   width: 100%;
   font-weight: 300;
   font-size: 24px;
