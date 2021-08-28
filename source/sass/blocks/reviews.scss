@@ -9,6 +9,7 @@
   text-align: center;
   padding: 50px 20px 60px;
   margin-top: -42px;
+  position: relative;
 
   @media (min-width: $tablet) {
     width: 660px;
@@ -19,6 +20,23 @@
   @media (min-width: $desktop) {
     width: $desktop;
     height: 110px;
+  }
+}
+
+.reviews::after {
+  content: "";
+  background-image: url("../img/quotes.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
   }
 }
 
