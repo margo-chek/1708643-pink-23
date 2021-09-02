@@ -1,0 +1,61 @@
+.banner {
+  display: none;
+  width: 100%;
+  min-width: $mobile;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    width: 660px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 54px 20px 0;
+    background-color: $color-white;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: $color-grey-background;
+    padding: 17px 131px 67px;
+  }
+}
+
+.banner__text {
+  padding-top: 48px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (min-width: $desktop) {
+    padding: 98px 0 0 71px;
+  }
+}
+
+.banner__title {
+  color: $color-black;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  width: 169px;
+
+  @media (min-width: $desktop) {
+    width: 300px;
+  }
+}
+
+.banner__description {
+  color: $color-grey;
+  padding: 24px 0;
+
+  @media (min-width: $desktop) {
+    padding: 37px 0 47px;
+  }
+}
+
+.banner__link {
+  color: $color-magenta;
+  text-decoration: underline;
+}

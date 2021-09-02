@@ -1,0 +1,70 @@
+.achievements {
+  background-color: $color-grey-background;
+  color: $color-grey;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  padding-bottom: 44px;
+}
+
+.achievements__title {
+  color: $color-magenta;
+  text-transform: uppercase;
+  padding: 42px 47px 44px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.achievements__list {
+  padding-left: 20px;
+}
+
+.achievements__checkbox {
+  padding-left: 55px;
+}
+
+.achievements__checkbox:not(:last-child) {
+  padding-bottom: 47px;
+}
+
+.achievements__input {
+  display: none;
+}
+
+.achievements__input + label::before,
+.achievements__input:hover + label::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  width: 39px;
+  height: 39px;
+  background: $color-white;
+  border: 2px solid $color-grey-border;
+  border-radius: 1px;
+}
+
+.achievements__input:focus + label::before {
+  background: $color-white;
+  border: 2px solid $color-grey-border;
+  border-radius: 1px;
+}
+
+.achievements__input:checked + label::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  background: $color-white;
+  border: none;
+  border-radius: 0;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.achievements__input:disabled + label::before {
+  background-color: $color-white;
+  border: 2px solid $color-grey-border;
+  border-radius: 1px;
+}

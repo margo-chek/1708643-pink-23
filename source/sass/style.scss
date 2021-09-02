@@ -1,1 +1,36 @@
-// Начните писать стили здесь
+// Global
+@import "global/normalize";
+@import "global/variables";
+@import "global/global";
+@import "global/fonts";
+
+// Blocks
+
+@import "blocks/page";
+@import "blocks/page-header";
+@import "blocks/page-main";
+@import "blocks/apps";
+@import "blocks/advantages";
+@import "blocks/banner";
+@import "blocks/reviews";
+@import "blocks/price";
+@import "blocks/contacts";
+@import "blocks/map";
+@import "blocks/page-footer";
+@import "blocks/page-catalog";
+@import "blocks/post-top";
+@import "blocks/photo-catalog";
+@import "blocks/post-bottom";
+@import "blocks/button-block";
+@import "blocks/edit";
+@import "blocks/post-button";
+@import "blocks/page-form";
+@import "blocks/post";
+@import "blocks/author";
+@import "blocks/achievements";
+@import "blocks/author-contacts";
+@import "blocks/apps-form";
+@import "blocks/feeling";
+@import "blocks/submit";
+@import "blocks/popup-error";
+@import "blocks/popup-submit-ok";

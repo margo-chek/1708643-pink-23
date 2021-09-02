@@ -1,0 +1,48 @@
+.page-form {
+  position: relative;
+  background-color: $color-white;
+  color: $color-grey;
+  margin-top: -66px;
+  max-width: $mobile;
+}
+
+.page-form__top-block {
+  background-image: url("../img/back-mobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-tablet@2x.png");
+  }
+
+  @media (min-width: $tablet) {
+    width: 660px;
+    height: 110px;
+    background-image: url("../img/back_tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+    height: 110px;
+    background-image: url("../img/back-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.png");
+    }
+  }
+}
+
+.page-form__title {
+  color: $color-white;
+  width: 100%;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  padding: 102px 46px 51px;
+}

@@ -1,0 +1,42 @@
+.popup-error {
+  background-color: $color-white;
+  padding: 44px 20px 52px;
+  display: none;
+
+  @media (min-width: $tablet) {
+    max-width: 460px;
+    margin: 0 auto;
+  }
+}
+
+.popup-error__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: $color-black;
+  text-align: center;
+}
+
+.popup-error__description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $color-grey;
+  padding: 37px 0 50px;
+  align-items: center;
+  text-align: center;
+}
+
+.popup-error__button {
+  padding: 23px;
+  align-items: center;
+  text-align: center;
+  background-color: $color-green;
+  border: 2px solid $color-green;
+  border-radius: 1px;
+  color: $color-white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
