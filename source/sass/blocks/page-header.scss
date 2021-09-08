@@ -68,6 +68,7 @@
   flex-direction: column;
   z-index: 999;
   padding: 0;
+  margin: 0;
 }
 
 .page-header--closed .page-header__list {
@@ -96,6 +97,7 @@
   padding: 15px 0;
   display: flex;
   justify-content: center;
+  text-decoration: none;
 
   &:hover {
     cursor: pointer;

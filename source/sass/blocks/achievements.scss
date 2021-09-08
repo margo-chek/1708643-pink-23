@@ -7,6 +7,11 @@
   padding-bottom: 44px;
 }
 
+.achievements__fieldset {
+  border: none;
+  padding: 0;
+}
+
 .achievements__title {
   color: $color-magenta;
   text-transform: uppercase;
@@ -18,11 +23,15 @@
 }
 
 .achievements__list {
-  padding-left: 20px;
+  padding: 0 0 0 20px;
+  margin: 0;
 }
 
 .achievements__checkbox {
-  padding-left: 55px;
+  padding: 0 0 0 55px;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 0;
 }
 
 .achievements__checkbox:not(:last-child) {

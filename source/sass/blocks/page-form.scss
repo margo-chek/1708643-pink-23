@@ -3,7 +3,7 @@
   background-color: $color-white;
   color: $color-grey;
   margin-top: -66px;
-  max-width: $mobile;
+  min-width: $mobile;
   width: 100%;
 }
 
@@ -42,4 +42,5 @@
   line-height: 33px;
   text-align: center;
   padding: 102px 46px 51px;
+  margin: 0;
 }

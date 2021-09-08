@@ -35,24 +35,24 @@
   outline: none;
 }
 
-input::-webkit-input-placeholder {
+.feeling__input::-webkit-input-placeholder {
   color: $color-grey;
   font-size: 18px;
 }
 
-input::-moz-placeholder {
+.feeling__input::-moz-placeholder {
   color: $color-grey;
   font-size: 18px;
 }
 
 /* Firefox 19+ */
-input:-moz-placeholder {
+.feeling__input:-moz-placeholder {
   color: $color-grey;
   font-size: 18px;
 }
 
 /* Firefox 18- */
-input:-ms-input-placeholder {
+.feeling__input:-ms-input-placeholder {
   color: $color-grey;
   font-size: 18px;
 }
