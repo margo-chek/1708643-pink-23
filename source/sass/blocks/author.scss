@@ -35,24 +35,32 @@
   padding: 23px 20px;
 }
 
-input::-webkit-input-placeholder {
+.author__surname-input::-webkit-input-placeholder,
+.author__name-input::-webkit-input-placeholder,
+.author__patronymic-input::-webkit-input-placeholder {
   color: $color-grey;
   font-size: 18px;
 }
 
-input::-moz-placeholder {
+.author__surname-input::-moz-placeholder,
+.author__name-input::-moz-placeholder,
+.author__patronymic-input::-moz-placeholder {
   color: $color-grey;
   font-size: 18px;
 }
 
 /* Firefox 19+ */
-input:-moz-placeholder {
+.author__surname-input:-moz-placeholder,
+.author__name-input:-moz-placeholder,
+.author__patronymic-input:-moz-placeholder {
   color: $color-grey;
   font-size: 18px;
 }
 
 /* Firefox 18- */
-input:-ms-input-placeholder {
+.author__surname-input:-ms-input-placeholder,
+.author__name-input:-ms-input-placeholder,
+.author__patronymic-input:-ms-input-placeholder {
   color: $color-grey;
   font-size: 18px;
 }

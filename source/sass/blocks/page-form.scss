@@ -3,7 +3,8 @@
   background-color: $color-white;
   color: $color-grey;
   margin-top: -66px;
-  max-width: $mobile;
+  min-width: $mobile;
+  width: 100%;
 }
 
 .page-form__top-block {
@@ -17,8 +18,6 @@
   }
 
   @media (min-width: $tablet) {
-    width: 660px;
-    height: 110px;
     background-image: url("../img/back_tablet.png");
 
     @media (min-resolution: 2dppx) {
@@ -27,8 +26,6 @@
   }
 
   @media (min-width: $desktop) {
-    width: $desktop;
-    height: 110px;
     background-image: url("../img/back-desktop.png");
 
     @media (min-resolution: 2dppx) {
@@ -45,4 +42,5 @@
   line-height: 33px;
   text-align: center;
   padding: 102px 46px 51px;
+  margin: 0;
 }

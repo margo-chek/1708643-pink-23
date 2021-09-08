@@ -9,14 +9,14 @@
   margin-bottom: 75px;
 
   @media (min-width: $tablet) {
-    width: 660px;
-    height: 110px;
+    min-width: 660px;
+    width: 100%;
     display: flex;
   }
 
   @media (min-width: $desktop) {
-    width: $desktop;
-    height: 110px;
+    min-width: $desktop;
+    width: 100%;
   }
 
   &::before {
@@ -38,12 +38,14 @@
 
 .map iframe {
   @media (min-width: $tablet) {
-    width: 660px;
-    height: 374px;
+    min-width: 660px;
+    width: 100%;
+    min-height: 374px;
   }
 
   @media (min-width: $desktop) {
-    width: $desktop;
-    height: 502px;
+    min-width: $desktop;
+    width: 100%;
+    min-height: 502px;
   }
 }

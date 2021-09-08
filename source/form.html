@@ -66,7 +66,7 @@
           </div>
         </section>
         <section class="achievements wrapper">
-          <fieldset>
+          <fieldset class="achievements__fieldset">
             <legend class="achievements__title">Ваши безбашенные достижения в путешествии</legend>
             <ul class="achievements__list">
               <li class="achievements__checkbox">
@@ -121,7 +121,7 @@
           </div>
         </section>
         <section class="apps-form wrapper">
-          <fieldset>
+          <fieldset class="apps-form__fieldset">
             <legend class="apps-form__title">С каким приложением путешествовали?</legend>
             <ul class="apps-form__list">
               <li class="apps-form__radio">
@@ -157,13 +157,15 @@
     <section class="popup-error wrapper">
       <h2 class="popup-error__title">Что-то пошло не так!</h2>
       <p class="popup-error__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="popup-error__button button button--popup-close" type="button">ОК</button>
+      <div class="popup-error__button-wrapper">
+        <button class="popup-error__button button button--popup-close" type="button">ОК</button>
+      </div>
     </section>
 
     <section class="popup-submit-ok wrapper">
       <h2 class="popup-submit-ok__title">Ваша заявка отправлена</h2>
       <p class="popup-submit-ok__description">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-      <div class="button-wrapper">
+      <div class="popup-submit-ok__button-wrapper">
         <button class="popup-submit-ok__button button button--popup-close" type="button">Закрыть окно</button>
       </div>
     </section>

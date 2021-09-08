@@ -7,6 +7,11 @@
   line-height: 30px;
 }
 
+.apps-form__fieldset {
+  border: none;
+  padding: 0;
+}
+
 .apps-form__title {
   color: $color-magenta;
   text-transform: uppercase;
@@ -18,11 +23,15 @@
 }
 
 .apps-form__list {
-  padding-left: 20px;
+  padding: 0 0 0 20px;
+  margin: 0;
 }
 
 .apps-form__radio {
-  padding-left: 55px;
+  padding: 0 0 0 55px;
+  list-style: none;
+  margin: 0;
+  flex-wrap: wrap;
 }
 
 .apps-form__radio:not(:last-child) {

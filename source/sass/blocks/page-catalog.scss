@@ -16,8 +16,8 @@
   }
 
   @media (min-width: $tablet) {
-    width: 660px;
-    height: 110px;
+    min-width: 660px;
+    width: 100%;
     background-image: url("../img/back_tablet.png");
 
     @media (min-resolution: 2dppx) {
@@ -26,8 +26,8 @@
   }
 
   @media (min-width: $desktop) {
-    width: $desktop;
-    height: 110px;
+    min-width: $desktop;
+    width: 100%;
     background-image: url("../img/back-desktop.png");
 
     @media (min-resolution: 2dppx) {
@@ -45,4 +45,5 @@
   text-align: center;
   height: 237px;
   padding-top: 102px;
+  margin: 0;
 }

@@ -14,13 +14,11 @@
   position: relative;
 
   @media (min-width: $tablet) {
-    width: 660px;
-    height: 110px;
     display: flex;
   }
 
   @media (min-width: $desktop) {
-    width: $desktop;
-    height: 110px;
+    min-width: $desktop;
+    width: 100%;
   }
 }

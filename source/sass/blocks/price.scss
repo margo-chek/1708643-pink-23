@@ -3,20 +3,19 @@
   flex-direction: column;
   width: 100%;
   min-width: $mobile;
-  min-height: 506px;
   background-color: $color-grey-background;
   overflow-x: hidden;
   position: relative;
 
   @media (min-width: $tablet) {
-    width: 660px;
-    height: 110px;
+    min-width: 660px;
+    width: 100%;
     display: flex;
   }
 
   @media (min-width: $desktop) {
-    width: $desktop;
-    height: 110px;
+    min-width: $desktop;
+    width: 100%;
   }
 }
 
@@ -30,16 +29,16 @@
 .price__list::before {
   content: "";
   background-image: url("../img/grey-background-mask-bottom-mobile.svg");
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
   position: absolute;
-  top: -60px;
+  top: -40px;
   left: 50%;
   transform: translateX(-50%);
   z-index: -1;
   width: 100%;
-  max-width: $mobile;
-  height: 506px;
+  min-width: $mobile;
+  height: 60px;
   overflow: hidden;
 }
 
@@ -90,6 +89,7 @@ td {
   text-align: center;
   text-transform: uppercase;
   color: $color-white;
+  margin: 0;
 }
 
 .rate-cost {
@@ -100,6 +100,7 @@ td {
   text-align: center;
   text-transform: uppercase;
   color: $color-white;
+  margin: 0;
 }
 
 .price__toggles {
