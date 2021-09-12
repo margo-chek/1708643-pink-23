@@ -41,10 +41,10 @@
       <h1 class="visually-hidden">Мобильное приложение Пинк - раскрась серые будни в розовый цвет!</h1>
       <section class="apps wrapper">
         <h2 class="apps__title">Взгляните на жизнь иначе!</h2>
-        <picture>
+        <picture class="apps__img">
           <source media="(min-width: 1200px)" srcset="img/phone-group_2.png 1x, img/phone-group_2@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/phone-group_1.png 1x, img/phone-group_1@2x.png 2x">
-          <img class="apps__img" src="img/phone-group.png" srcset="img/phone-group@2x.png 2x" width="320" height="286" alt="Телефон">
+          <img src="img/phone-group.png" srcset="img/phone-group@2x.png 2x" width="100%" height="100%" alt="Телефон">
         </picture>
         <div class="apps__mobile">
           <a class="apps__button button" href="#">Скачать приложение</a>
@@ -87,23 +87,29 @@
         </div>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--mood">
+            <picture class="advantages__img">
+              <img src="img/iphone-desktop-1.png" srcset="img/iphone-desktop-1@2x.png 2x" width="100%" height="100%" alt="Айфон настроение">
+            </picture>
             <h3 class="advantages__title">Поднимает настроение</h3>
             <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="advantages__item advantages__item--world">
+            <picture class="advantages__img">
+              <img src="img/iphone-desktop-2.png" srcset="img/iphone-desktop-2@2x.png 2x" width="100%" height="100%" alt="Айфон мир">
+            </picture>
             <h3 class="advantages__title">Меняет мир вокруг</h3>
             <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="advantages__item advantages__item--friends">
+            <picture class="advantages__img">
+              <source media="(min-width: 1200px)" srcset="img/iphone-desktop.png 1x, img/iphone-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/iphone-tablet-group.png 1x, img/iphone-tablet-group@2x.png 2x">
+              <img src="img/iphone-mobile-group.png" srcset="img/iphone-mobile-group@2x.png 2x" width="100%" height="100%" alt="Айфон">
+            </picture>
             <h3 class="advantages__title">Заводит новых друзей</h3>
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/iphone-mobile-group.png 1x, img/iphone-mobile-group@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/iphone-mobile-group.png 1x, img/iphone-mobile-group@2x.png 2x">
-          <img class="advantages__img" src="img/iphone-mobile-group.png" srcset="img/iphone-mobile-group@2x.png 2x" width="157" height="320" alt="Телефон">
-        </picture>
       </section>
 
       <section class="banner wrapper">
@@ -111,7 +117,7 @@
         <div class="banner__text">
           <h3 class="banner__title">Эффект на 24 часа!</h3>
           <p class="banner__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <p><a class="banner__link" href="#">Узнать больше об исследовании</a></p>
+          <a class="banner__link" href="#">Узнать больше об исследовании</a>
         </div>
       </section>
 
@@ -138,7 +144,7 @@
           <h2 class="visually-hidden">Прайс</h2>
           <table class="price__list slider__list">
             <tr class="slider__item">
-              <th class="price__name"></th>
+              <th class="price__name price__name--empty"></th>
               <td>
                 <header class="price__rate">
                   <p class="rate-name">База</p>
@@ -190,18 +196,20 @@
 
       <section class="contacts wrapper">
           <h2 class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
-          <p class="contacts__phone">
-            Звоните:
-            <a class="phone" href="tel:+74956660166">+7(495) 666-01-66</a>
-          </p>
-          <p class="contacts__email">
-            Пишите:
-            <a class="email" href="#">mail@htmlacademy.ru</a>
-          </p>
-          <p class="contacts__address">
-            Приезжайте в гости:
-            <a class="address" href="#">ул. Большая<br>Конюшенная, 19/8</a>
-          </p>
+          <div class="contacts__date">
+            <p class="contacts__phone">
+              Звоните:
+              <a class="phone" href="tel:+74956660166">+7(495) 666-01-66</a>
+            </p>
+            <p class="contacts__email">
+              Пишите:
+              <a class="email" href="#">mail@htmlacademy.ru</a>
+            </p>
+            <p class="contacts__address">
+              Приезжайте в гости:
+              <a class="address" href="#">ул. Большая<br>Конюшенная, 19/8</a>
+            </p>
+          </div>
         </section>
 
         <section class="map">

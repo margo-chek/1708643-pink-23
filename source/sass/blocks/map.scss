@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 100%;
   min-width: $mobile;
-  height: 200px;
+  height: 100%;
   position: relative;
   top: 75px;
   margin-bottom: 75px;
@@ -33,6 +33,15 @@
     max-width: 1200px;
     height: 123px;
     overflow-x: hidden;
+
+    @media (min-width: $tablet) {
+      background-position: center top -36px;
+    }
+
+    @media (min-width: $desktop) {
+      background-image: url("../img/triangle-map-desktop.svg");
+      background-position: center top -20px;
+    }
   }
 }
 

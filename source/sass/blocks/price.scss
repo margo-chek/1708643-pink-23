@@ -11,18 +11,36 @@
     min-width: 660px;
     width: 100%;
     display: flex;
+    padding-bottom: 70px;
   }
 
   @media (min-width: $desktop) {
     min-width: $desktop;
     width: 100%;
+    padding-bottom: 98px;
   }
+}
+
+.price__wrapper {
+  overflow: auto;
 }
 
 .price__list {
   background-color: $color-white;
-  display: flex;
   margin-left: -80px;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+    width: 940px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 940px;
+  }
+}
+
+.price__list tr:nth-child(1) {
   position: relative;
 }
 
@@ -45,16 +63,60 @@
 th,
 td {
   border: 2px solid $color-grey-background;
+  width: 280px;
+  height: 59px;
+
+  @media (min-width: $tablet) {
+    width: 152px;
+    height: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 233px;
+    height: 59px;
+  }
 }
 
-.slider__item {
-  display: flex;
-  flex-direction: row;
+tr:nth-child(1) td:nth-child(3) {
+  position: relative;
+}
+
+tr:nth-child(1) td:nth-child(3)::after {
+  content: "";
+  background-image: url("../img/hit-mobile.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 74px;
+  width: 74px;
+
+  @media (min-width: $tablet) {
+    left: 0;
+    height: 61px;
+    width: 61px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 0;
+    height: 74px;
+    width: 74px;
+  }
 }
 
 .price__rate {
   background-color: $color-grey;
-  width: 280px;
+  height: 94px;
+  padding-top: 19px;
+
+  @media (min-width: $tablet) {
+    height: 75px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 94px;
+    padding-top: 23px;
+  }
 }
 
 .price__name {
@@ -66,19 +128,30 @@ td {
   color: $color-grey;
 
   &--mobile {
-    display: flex;
+    display: inline-block;
+    padding-right: 77px;
+    text-align: left;
+    font-size: 14px;
+    text-transform: uppercase;
 
     @media (min-width: $tablet) {
       display: none;
     }
   }
+
+  &--empty {
+    background-color: $color-grey-background;
+  }
 }
 
 .price__value {
-  display: flex;
-  justify-content: space-between;
   width: 280px;
   padding: 0 12px;
+  text-align: left;
+
+  @media (min-width: $tablet) {
+    text-align: center;
+  }
 }
 
 .rate-name {
@@ -109,4 +182,8 @@ td {
   align-items: center;
   margin: 0 auto;
   padding: 45px 0 49px;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }

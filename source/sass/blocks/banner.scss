@@ -3,6 +3,7 @@
   width: 100%;
   min-width: $mobile;
   position: relative;
+  z-index: 999;
 
   @media (min-width: $tablet) {
     min-width: 660px;
@@ -26,13 +27,13 @@
 }
 
 .banner__text {
-  padding-top: 48px;
+  padding: 48px 0 0 72px;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
 
   @media (min-width: $desktop) {
-    padding: 98px 0 0 71px;
+    padding: 98px 0 53px 71px;
   }
 }
 
