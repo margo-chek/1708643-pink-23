@@ -5,6 +5,34 @@
 
   @media (min-width: $tablet) {
     order: 5;
+    padding: 42px 0 0;
+  }
+}
+
+.feeling__fieldset {
+  border: none;
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    border: 2px solid $color-grey-border;
+    border-radius: 1px;
+    width: 100%;
+  }
+}
+
+.feeling__title {
+  color: $color-magenta;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet) {
+    display: block;
+    padding: 0 31px;
+    margin-bottom: 0;
   }
 }
 
@@ -13,14 +41,10 @@
   flex-direction: column;
   font-weight: normal;
   line-height: 30px;
-}
 
-.feeling__label {
-  color: $color-magenta;
-  font-size: 14px;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 22px;
+  @media (min-width: $tablet) {
+    padding: 47px 60px 53px;
+  }
 }
 
 .feeling__text {

@@ -9,12 +9,21 @@
 
   @media (min-width: $tablet) {
     order: 4;
+    background-color: $color-white;
+    margin-top: 65px;
+    padding-bottom: 0;
   }
 }
 
 .achievements__fieldset {
   border: none;
   padding: 0;
+
+  @media (min-width: $tablet) {
+    border: 2px solid $color-grey-border;
+    border-radius: 1px;
+    width: 100%;
+  }
 }
 
 .achievements__title {
@@ -25,11 +34,24 @@
   font-size: 14px;
   line-height: 18px;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    padding: 0 31px 0;
+  }
 }
 
 .achievements__list {
   padding: 0 0 0 20px;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    padding: 49px 60px 50px;
+  }
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .achievements__checkbox {

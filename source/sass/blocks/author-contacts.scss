@@ -13,6 +13,40 @@
   flex-direction: column;
   font-weight: normal;
   line-height: 30px;
+
+  @media (min-width: $desktop) {
+    width: 50%;
+  }
+}
+
+.author-contacts__fieldset {
+  border: none;
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    border: 2px solid $color-grey-border;
+    border-radius: 1px;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.author-contacts__title {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+    padding: 0 31px;
+    color: $color-magenta;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+  }
 }
 
 .author-contacts__phone-label,
@@ -28,6 +62,18 @@
   }
 }
 
+.author-contacts__address-label {
+  padding-bottom: 0;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 37px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 23px;
+  }
+}
+
 .author-contacts__phone,
 .author-contacts__address {
   padding: 17px 22px 29px;
@@ -35,7 +81,7 @@
   position: relative;
 
   @media (min-width: $tablet) {
-    padding: 17px 82px 29px;
+    padding: 41px 60px 22px;
   }
 }
 
@@ -84,8 +130,8 @@
     width: 57px;
     height: 57px;
     position: absolute;
-    top: 18px;
-    right: 83px;
+    top: 42px;
+    right: 61px;
     border: none;
   }
 }

@@ -9,16 +9,26 @@
 
   @media (min-width: $tablet) {
     order: 2;
+    background-color: $color-white;
+    padding: 42px 0;
   }
 
   @media (min-width: $desktop) {
-    width: 50%;
+    width: 46%;
+    margin-left: 8%;
+    padding: 0;
   }
 }
 
 .apps-form__fieldset {
   border: none;
   padding: 0;
+
+  @media (min-width: $tablet) {
+    border: 2px solid $color-grey-border;
+    border-radius: 1px;
+    width: 100%;
+  }
 }
 
 .apps-form__title {
@@ -29,11 +39,23 @@
   font-size: 14px;
   line-height: 18px;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    padding: 0 25px;
+  }
 }
 
 .apps-form__list {
   padding: 0 0 0 20px;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    padding: 49px 0 54px 20px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 49px 0 54px 74px;
+  }
 }
 
 .apps-form__radio {

@@ -75,9 +75,11 @@
 
 .apps__mobile {
   background-color: $color-grey;
+  padding: 38px 0;
 
   @media (min-width: $tablet) {
     background-color: transparent;
+    padding: 0;
   }
 }
 

@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop) {
-    width: 50%;
+    width: 46%;
   }
 }
 
@@ -30,6 +30,10 @@
   font-size: 14px;
   text-transform: uppercase;
   padding-left: 43px;
+
+  @media (min-width: $tablet) {
+    padding-left: 0;
+  }
 }
 
 .author__surname,
@@ -37,6 +41,10 @@
 .author__patronymic {
   margin: 17px 22px 29px;
   width: 100%;
+
+  @media (min-width: $tablet) {
+    margin: 17px 0 29px 22px;
+  }
 }
 
 .author__surname-input,

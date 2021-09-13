@@ -11,6 +11,8 @@
     height: 59px;
     align-items: center;
     overflow-y: hidden;
+    margin: 70px 0 50px;
+    padding: 0;
   }
 }
 
@@ -44,6 +46,10 @@
   line-height: 30px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }
 
 .mark {

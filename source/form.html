@@ -100,28 +100,31 @@
           </fieldset>
         </section>
         <section class="author-contacts">
-          <div class="author-contacts__item">
-            <label class="author-contacts__phone-label" for="phone">НОМЕР ТЕЛЕФОНА</label>
-            <div class="author-contacts__phone">
-              <input class="author-contacts__phone-input" id="phone" type="text" name="phone" placeholder="Номер, пожалуйста" required>
-                <button class="author-contacts__phone-icon" type="button" aria-label="Кнопка-иконка телефон">
-                  <svg width="20" height="19">
-                    <use xlink:href="img/sprite.svg#icon-phone"></use>
-                  </svg>
-                </button>
+          <fieldset class="author-contacts__fieldset">
+            <legend class="author-contacts__title">Контактная информация</legend>
+            <div class="author-contacts__item">
+              <label class="author-contacts__phone-label" for="phone">НОМЕР ТЕЛЕФОНА</label>
+              <div class="author-contacts__phone">
+                <input class="author-contacts__phone-input" id="phone" type="text" name="phone" placeholder="Номер, пожалуйста" required>
+                  <button class="author-contacts__phone-icon" type="button" aria-label="Кнопка-иконка телефон">
+                    <svg width="20" height="19">
+                      <use xlink:href="img/sprite.svg#icon-phone"></use>
+                    </svg>
+                  </button>
+              </div>
             </div>
-          </div>
-          <div class="author-contacts__item">
-            <label class="author-contacts__address-label" for="address">АДРЕС ПОЧТЫ</label>
-            <div class="author-contacts__address">
-              <input class="author-contacts__address-input" id="address" type="text" name="address" placeholder="Введите почту *" required>
-                <button class="author-contacts__mail-icon" type="button" aria-label="Кнопка-иконка email">
-                  <svg width="18" height="13">
-                    <use xlink:href="img/sprite.svg#icon-mail"></use>
-                  </svg>
-                </button>
+            <div class="author-contacts__item">
+              <label class="author-contacts__address-label" for="address">АДРЕС ПОЧТЫ</label>
+              <div class="author-contacts__address">
+                <input class="author-contacts__address-input" id="address" type="text" name="address" placeholder="Введите почту *" required>
+                  <button class="author-contacts__mail-icon" type="button" aria-label="Кнопка-иконка email">
+                    <svg width="18" height="13">
+                      <use xlink:href="img/sprite.svg#icon-mail"></use>
+                    </svg>
+                  </button>
+              </div>
             </div>
-          </div>
+          </fieldset>
         </section>
         <section class="apps-form">
           <fieldset class="apps-form__fieldset">
@@ -143,12 +146,14 @@
           </fieldset>
         </section>
         <section class="feeling">
-          <div class="feeling__item">
-            <label class="feeling__label" for="feeling">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
-            <div class="feeling__text">
-              <textarea class="feeling__input" id="feeling" type="text" name="feeling" cols="30" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях" required></textarea>
+          <fieldset class="feeling__fieldset">
+            <legend class="feeling__title">Опишите свои эмоции</legend>
+            <div class="feeling__item">
+              <div class="feeling__text">
+                <textarea class="feeling__input" type="text" name="feeling" cols="30" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях" required></textarea>
+              </div>
             </div>
-          </div>
+          </fieldset>
         </section>
         <section class="submit">
           <button class="submit__button button" type="submit">Отправить форму</button>
