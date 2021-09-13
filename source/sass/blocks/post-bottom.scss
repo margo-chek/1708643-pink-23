@@ -1,5 +1,14 @@
 .post-bottom {
-  margin: 29px 20px 52px;
+  width: $mobile;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 936px;
+  }
 }
 
 .post-bottom__text {
@@ -7,5 +16,14 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  margin: 0;
+  padding: 29px 0 72px;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    padding: 53px 0 78px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 14px 0 75px;
+  }
 }

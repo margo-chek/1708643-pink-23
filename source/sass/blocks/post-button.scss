@@ -12,16 +12,39 @@
 
 .post-button {
   background-color: $color-grey-background;
-  padding: 38px 20px 41px;
+  width: 100%;
   border-top: 1px solid $color-grey;
+}
+
+.post-button__wrapper {
+  margin: 0 auto;
+  padding: 38px 20px 41px;
+  width: $mobile;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 936px;
+    flex-direction: row;
+  }
 }
 
 .post-button__input.button {
   margin-bottom: 12px;
   color: $color-magenta;
   border-color: $color-magenta;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .button--disabled {

@@ -1,3 +1,16 @@
+.photo-catalog {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 940px;
+  }
+}
+
 .photo-catalog__list {
   margin: 0;
   padding: 0;
@@ -39,9 +52,20 @@
 
 .photo-catalog__item--panorama {
   position: relative;
+  width: $mobile;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+  }
 }
 
 .photo-catalog__item--panorama::after {
+  content: "";
   position: absolute;
   top: 10px;
   right: 8px;
