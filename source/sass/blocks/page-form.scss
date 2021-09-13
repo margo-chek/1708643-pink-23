@@ -5,6 +5,10 @@
   margin-top: -66px;
   min-width: $mobile;
   width: 100%;
+
+  @media (min-width: $tablet) {
+    margin-top: -110px;
+  }
 }
 
 .page-form__top-block {

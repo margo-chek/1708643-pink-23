@@ -11,9 +11,11 @@
     <div class="page__header-wrapper">
       <header class="page-header page-header--closed">
         <a class="page-header__logo logo" href="#">
-          <svg fill="#ffffff"  width="74" height="23">
-            <use xlink:href="img/sprite.svg#logo-pink-header"></use>
-          </svg>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-top-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-top-tablet.svg">
+            <img src="img/logo-pink-top-mobile.svg" alt="Логотип Пинк">
+          </picture>
         </a>
         <nav class="page-header__nav nav">
           <button class="page-header__toggle" type="button">
@@ -128,23 +130,31 @@
       </section>
 
       <div class="wrapper">
-      <section class="reviews slider">
-        <h2 class="visually-hidden">Отзывы</h2>
-        <ul class="reviews__list slider__list">
-          <li class="reviews__item slider__item">
-            <div class="reviews__author">
-              <p class="reviews__author-name">Николай Петров</p>
-              <p class="reviews__author-post">25 лет, водитель трамвая</p>
-            </div>
-            <blockquote class="reviews__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
-          </li>
-        </ul>
-        <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle slider__toggle--current" type="button"></button>
-          <button class="slider__toggle" type="button"></button>
-          <button class="slider__toggle" type="button"></button>
-        </p>
-      </section>
+        <section class="reviews slider">
+          <h2 class="visually-hidden">Отзывы</h2>
+          <ul class="reviews__list slider__list">
+            <li class="reviews__item slider__item">
+              <div class="reviews__author">
+                <p class="reviews__author-name">Николай Петров</p>
+                <p class="reviews__author-post">25 лет, водитель трамвая</p>
+              </div>
+              <div class="reviews__blockquote">
+                <button class="reviews__arrow reviews__arrow--left" type="button">
+                  <img src="img/arrow-left.svg" width="22" height="41" alt="Стрелка влево">
+                </button>
+                <blockquote class="reviews__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+                <button class="reviews__arrow reviews__arrow--right" type="button">
+                  <img src="img/arrow-right.svg" width="22" height="41" alt="Стрелка вправо">
+                </button>
+              </div>
+            </li>
+          </ul>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--current" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
+          </p>
+        </section>
       </div>
 
       <section class="price slider">
@@ -270,11 +280,14 @@
 
     <div class="wrapper">
       <footer class="page-footer">
-        <div class="page-footer__logo logo" href="#">
-          <svg fill="#283645">
-            <use xlink:href="img/sprite.svg#logo-glasses"></use>
-            <use xlink:href="img/sprite.svg#logo-pink"></use>
-          </svg>
+        <div>
+          <a class="page-footer__logo logo" href="#">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-pink-bottom-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-bottom.svg">
+              <img src="img/logo-pink-bottom.svg" alt="Логотип Пинк">
+            </picture>
+          </a>
         </div>
         <div class="page-footer__social-networks">
           <h2 class="visually-hidden">Социальные сети</h2>

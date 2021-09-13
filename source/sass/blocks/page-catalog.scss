@@ -5,6 +5,10 @@
   margin-top: -66px;
   width: 100%;
   min-width: $mobile;
+
+  @media (min-width: $tablet) {
+    margin-top: -110px;
+  }
 }
 
 .page-catalog__top-block {

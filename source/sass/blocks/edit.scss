@@ -1,55 +1,80 @@
 .edit {
   background-color: $color-grey-background;
   padding: 20px 20px 75px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.edit__photo {
+  flex-shrink: 0;
 }
 
 .edit__tool-list {
   display: flex;
+  justify-content: center;
   margin: 42px 0 0;
-  padding: 0;
+  padding: 0 0 50px;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    flex-direction: column;
+  }
 }
 
 .edit__tool-item {
-  position: relative;
   list-style: none;
   margin: 0;
   padding: 0;
-  flex-wrap: wrap;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    display: flex;
+  }
 }
 
 .edit__tool-item:not(:last-child) {
   margin-right: 35px;
+
+  @media (min-width: $tablet) {
+    margin-right: 0;
+  }
 }
 
 .edit__range-controls {
   display: none;
-  height: 41px;
   margin-bottom: 8px;
-  padding: 20px 0 0 16px;
   background-color: transparent;
   position: relative;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    width: 100%;
+  }
 }
 
 .edit__range-controls--active {
   display: block;
-  height: 41px;
-  margin-bottom: 27px;
-  padding: 40px 0 0 16px;
-  background-color: transparent;
   position: absolute;
-  bottom: 240px;
-  left: 20px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  @media (min-width: $tablet) {
+    position: relative;
+  }
 }
 
 .edit__scale {
   height: 2px;
-  width: 240px;
+  width: 100%;
   background-color: $color-grey;
 }
 
 .edit__toggle {
   position: absolute;
-  top: 32px;
+  top: -6px;
   left: 208px;
   width: 14px;
   height: 14px;
@@ -57,4 +82,49 @@
   border: 2px solid $color-magenta;
   background-color: $color-white;
   border-radius: 50%;
+}
+
+.button {
+  border: 3px solid $color-grey;
+  box-sizing: border-box;
+  border-radius: 30px;
+  text-align: center;
+  padding: 21px;
+  width: 280px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.edit__buttons {
+  background-color: $color-grey-background;
+  width: 100%;
+}
+
+.edit__buttons-wrapper {
+  margin: 38px auto 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+  }
+}
+
+.edit__button-input.button {
+  margin-bottom: 12px;
+  color: $color-magenta;
+  border-color: $color-magenta;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.button--disabled {
+  opacity: 0.1;
 }

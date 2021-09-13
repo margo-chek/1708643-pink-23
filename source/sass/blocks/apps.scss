@@ -11,6 +11,10 @@
   background-size: cover;
   z-index: -2;
 
+  @media (min-width: $tablet) {
+    margin-top: -110px;
+  }
+
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-tablet@2x.png");
   }
