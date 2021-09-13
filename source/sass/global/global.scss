@@ -11,9 +11,16 @@
 }
 
 .wrapper {
-  min-width: 320px;
-  width: 100%;
+  width: $mobile;
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 936px;
+  }
 }
 
 .visually-hidden {

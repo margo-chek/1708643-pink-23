@@ -1,6 +1,11 @@
 .feeling {
   background-color: $color-white;
   padding: 42px 22px 52px;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    order: 5;
+  }
 }
 
 .feeling__item {
@@ -8,10 +13,6 @@
   flex-direction: column;
   font-weight: normal;
   line-height: 30px;
-
-  @media (min-width: $tablet) {
-    flex-direction: row;
-  }
 }
 
 .feeling__label {
@@ -33,6 +34,7 @@
   border: none;
   overflow: auto;
   outline: none;
+  width: 100%;
 }
 
 .feeling__input::-webkit-input-placeholder {

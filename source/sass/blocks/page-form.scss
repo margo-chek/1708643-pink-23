@@ -43,4 +43,32 @@
   text-align: center;
   padding: 102px 46px 51px;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 50px;
+    line-height: 68px;
+    padding: 191px 20px 74px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 184px 220px 104px;
+  }
+
+  &--desktop {
+    display: block;
+
+    @media (min-width: $desktop) {
+      display: none;
+    }
+  }
+}
+
+.page-form__container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }

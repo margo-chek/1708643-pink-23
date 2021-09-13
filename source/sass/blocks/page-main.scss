@@ -2,15 +2,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-width: $mobile;
   height: 100%;
   position: relative;
-
-  @media (min-width: $tablet) {
-    display: flex;
-  }
-
-  @media (min-width: $desktop) {
-    width: $desktop;
-  }
 }

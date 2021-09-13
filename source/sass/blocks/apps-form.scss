@@ -5,6 +5,15 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
+  display: flex;
+
+  @media (min-width: $tablet) {
+    order: 2;
+  }
+
+  @media (min-width: $desktop) {
+    width: 50%;
+  }
 }
 
 .apps-form__fieldset {
@@ -32,6 +41,7 @@
   list-style: none;
   margin: 0;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .apps-form__radio:not(:last-child) {
@@ -46,7 +56,7 @@
 .apps-form__input:hover + label::before {
   content: "";
   position: absolute;
-  left: 20px;
+  left: 0;
   width: 39px;
   height: 39px;
   background: $color-white;
@@ -63,7 +73,7 @@
 .apps-form__input:checked + label::before {
   content: "";
   position: absolute;
-  left: 20px;
+  left: 0;
   width: 39px;
   height: 39px;
   background: $color-white;
@@ -74,7 +84,7 @@
 .apps-form__input:checked + label::after {
   content: "";
   position: absolute;
-  left: 32px;
+  left: 12px;
   margin-top: 12px;
   width: 15px;
   height: 15px;

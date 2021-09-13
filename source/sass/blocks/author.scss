@@ -1,6 +1,14 @@
 .author {
   background-color: $color-white;
   padding-bottom: 15px;
+
+  @media (min-width: $tablet) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop) {
+    width: 50%;
+  }
 }
 
 .author__item {
@@ -11,6 +19,7 @@
 
   @media (min-width: $tablet) {
     flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -27,12 +36,16 @@
 .author__name,
 .author__patronymic {
   margin: 17px 22px 29px;
+  width: 100%;
 }
 
 .author__surname-input,
 .author__name-input,
 .author__patronymic-input {
   padding: 23px 20px;
+  width: 100%;
+  border: 2px solid $color-grey-border;
+  border-radius: 1px;
 }
 
 .author__surname-input::-webkit-input-placeholder,

@@ -8,34 +8,36 @@
   </head>
 
   <body class="page__body">
-    <header class="page-header page-header--opened">
-      <a class="page-header__logo logo" href="index.html">
-        <svg fill="#ffffff"  width="74" height="23">
-          <use xlink:href="img/sprite.svg#logo-pink-header"></use>
-        </svg>
-      </a>
-      <nav class="page-header__nav nav">
-        <button class="page-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="page-header__wrapper">
-          <ul class="page-header__list">
-            <li class="page-header__item">
-              <a class="page-header__link" href="index.html">Главная</a>
-            </li>
-            <li class="page-header__item">
-              <a class="page-header__link">Фотографии</a>
-            </li>
-            <li class="page-header__item">
-              <a class="page-header__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="page-header__item">
-              <a class="page-header__link" href="https://htmlacademy.ru">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <div class="page__header-wrapper">
+      <header class="page-header page-header--closed">
+        <a class="page-header__logo logo" href="index.html">
+          <svg fill="#ffffff"  width="74" height="23">
+            <use xlink:href="img/sprite.svg#logo-pink-header"></use>
+          </svg>
+        </a>
+        <nav class="page-header__nav nav">
+          <button class="page-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="page-header__wrapper">
+            <ul class="page-header__list">
+              <li class="page-header__item">
+                <a class="page-header__link" href="index.html">Главная</a>
+              </li>
+              <li class="page-header__item">
+                <a class="page-header__link">Фотографии</a>
+              </li>
+              <li class="page-header__item">
+                <a class="page-header__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="page-header__item">
+                <a class="page-header__link" href="https://htmlacademy.ru">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
 
     <main class="page-catalog">
       <div class="page-catalog__top-block">
@@ -50,7 +52,7 @@
           <li class="photo-catalog__item photo-catalog__item--panorama">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/catalog/panorama-desktop.png 1x, img/catalog/panorama-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/catalog/panorama-tablet.png 1x, img/catalog/panorama-tablet@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="img/catalog/panorama-tablet.png 1x, img/catalog/panorama-tablet@2x.png 2x">
               <img class="photo-catalog__photo photo-catalog__photo--panorama" src="img/catalog/panorama-mobile.jpg" srcset="img/catalog/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Фото-панорама">
             </picture>
             <div class="photo-catalog__description">
@@ -62,7 +64,7 @@
           <li class="photo-catalog__item">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop.png 1x, img/catalog/photo-1-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet.png 1x, img/catalog/photo-1-tablet@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="img/catalog/photo-1-tablet.png 1x, img/catalog/photo-1-tablet@2x.png 2x">
               <img class="photo-catalog__photo" src="img/catalog/photo-1-mobile.jpg" srcset="img/catalog/photo-1-mobile@2x.jpg 2x" width="280" height="180" alt="Фото1">
             </picture>
             <div class="photo-catalog__description">
@@ -74,7 +76,7 @@
           <li class="photo-catalog__item">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop.png 1x, img/catalog/photo-2-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet.png 1x, img/catalog/photo-2-tablet@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="img/catalog/photo-2-tablet.png 1x, img/catalog/photo-2-tablet@2x.png 2x">
               <img class="photo-catalog__photo" src="img/catalog/photo-2-mobile.jpg" srcset="img/catalog/photo-2-mobile@2x.jpg 2x" width="280" height="180" alt="Фото2">
             </picture>
             <div class="photo-catalog__description">
@@ -86,7 +88,7 @@
           <li class="photo-catalog__item">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop.png 1x, img/catalog/photo-3-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet.png 1x, img/catalog/photo-3-tablet@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="img/catalog/photo-3-tablet.png 1x, img/catalog/photo-3-tablet@2x.png 2x">
               <img class="photo-catalog__photo" src="img/catalog/photo-3-mobile.jpg" srcset="img/catalog/photo-3-mobile@2x.jpg 2x" width="280" height="180" alt="Фото3">
             </picture>
             <div class="photo-catalog__description">
@@ -98,7 +100,7 @@
           <li class="photo-catalog__item">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/catalog/photo-4-desktop.png 1x, img/catalog/photo-4-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/catalog/photo-4-tablet.png 1x, img/catalog/photo-4-tablet@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="img/catalog/photo-4-tablet.png 1x, img/catalog/photo-4-tablet@2x.png 2x">
               <img class="photo-catalog__photo" src="img/catalog/photo-4-mobile.jpg" srcset="img/catalog/photo-4-mobile@2x.jpg 2x" width="280" height="180" alt="Фото4">
             </picture>
             <div class="photo-catalog__description">
@@ -110,7 +112,7 @@
           <li class="photo-catalog__item">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/catalog/photo-5-desktop.png 1x, img/catalog/photo-5-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/catalog/photo-5-tablet.png 1x, img/catalog/photo-5-tablet@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="img/catalog/photo-5-tablet.png 1x, img/catalog/photo-5-tablet@2x.png 2x">
               <img class="photo-catalog__photo" src="img/catalog/photo-5-mobile.jpg" srcset="img/catalog/photo-5-mobile@2x.jpg 2x" width="280" height="180" alt="Фото5">
             </picture>
             <div class="photo-catalog__description">
@@ -122,7 +124,7 @@
           <li class="photo-catalog__item">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/catalog/photo-6-desktop.png 1x, img/catalog/photo-6-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/catalog/photo-6-tablet.png 1x, img/catalog/photo-6-tablet@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="img/catalog/photo-6-tablet.png 1x, img/catalog/photo-6-tablet@2x.png 2x">
               <img class="photo-catalog__photo" src="img/catalog/photo-6-mobile.jpg" srcset="img/catalog/photo-6-mobile@2x.jpg 2x" width="280" height="180" alt="Фото6">
             </picture>
             <div class="photo-catalog__description">
@@ -140,7 +142,7 @@
         <h2 class="visually-hidden">Редактирование фото</h2>
         <picture>
           <source media="(min-width: 1200px)" srcset="img/catalog/edit-photo-desktop.png 1x, img/catalog/edit-photo-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/catalog/edit-photo-tablet.png 1x, img/catalog/edit-photo-tablet@2x.png 2x">
+          <source media="(min-width: 660px)" srcset="img/catalog/edit-photo-tablet.png 1x, img/catalog/edit-photo-tablet@2x.png 2x">
           <img class="photo-catalog__photo" src="img/catalog/edit-photo-mobile.jpg" srcset="img/catalog/edit-photo-mobile@2x.jpg 2x" width="280" height="374" alt="Фото">
         </picture>
         <ul class="edit__tool-list">
@@ -177,50 +179,52 @@
       </section>
     </main>
 
-    <footer class="page-footer wrapper">
-      <div class="page-footer__logo logo" href="#">
-        <svg fill="#283645">
-          <use xlink:href="img/sprite.svg#logo-glasses"></use>
-          <use xlink:href="img/sprite.svg#logo-pink"></use>
-        </svg>
-      </div>
-      <div class="page-footer__social-networks">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="social-networks__list">
-          <li class="social-networks__item">
-            <a class="social-networks__link social__link--twitter" href="https://www.twitter.com/htmlacademy" aria-label="Логотип Twitter">
-              <span class="visually-hidden">Твиттер</span>
-              <svg width="54" height="54">
-                <use xlink:href="img/sprite.svg#twitter-icon"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-networks__item">
-            <a class="social-networks__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Логотип Facebook">
-              <span class="visually-hidden">Фейсбук</span>
-              <svg width="54" height="54">
-                <use xlink:href="img/sprite.svg#facebook-icon"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-networks__item">
-            <a class="social-networks__link social__link--youtube" href="https://www.youtube.com/htmlacademy" aria-label="Логотип Youtube">
-              <span class="visually-hidden">Ютуб</span>
-              <svg width="54" height="54">
-                <use xlink:href="img/sprite.svg#youtube-icon"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <div class="copyright__text">Разработано</div>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg width="27" height="34">
-            <use xlink:href="img/sprite.svg#htmlacademy-logo"></use>
+    <div class="wrapper">
+      <footer class="page-footer">
+        <div class="page-footer__logo logo" href="#">
+          <svg fill="#283645">
+            <use xlink:href="img/sprite.svg#logo-glasses"></use>
+            <use xlink:href="img/sprite.svg#logo-pink"></use>
           </svg>
-        </a>
-      </div>
-    </footer>
+        </div>
+        <div class="page-footer__social-networks">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="social-networks__list">
+            <li class="social-networks__item">
+              <a class="social-networks__link social__link--twitter" href="https://www.twitter.com/htmlacademy" aria-label="Логотип Twitter">
+                <span class="visually-hidden">Твиттер</span>
+                <svg width="54" height="54">
+                  <use xlink:href="img/sprite.svg#twitter-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-networks__item">
+              <a class="social-networks__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Логотип Facebook">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg width="54" height="54">
+                  <use xlink:href="img/sprite.svg#facebook-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-networks__item">
+              <a class="social-networks__link social__link--youtube" href="https://www.youtube.com/htmlacademy" aria-label="Логотип Youtube">
+                <span class="visually-hidden">Ютуб</span>
+                <svg width="54" height="54">
+                  <use xlink:href="img/sprite.svg#youtube-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <div class="copyright__text">Разработано</div>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg width="27" height="34">
+              <use xlink:href="img/sprite.svg#htmlacademy-logo"></use>
+            </svg>
+          </a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
