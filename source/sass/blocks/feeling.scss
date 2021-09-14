@@ -1,6 +1,39 @@
 .feeling {
   background-color: $color-white;
   padding: 42px 22px 52px;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    order: 5;
+    padding: 42px 0 0;
+  }
+}
+
+.feeling__fieldset {
+  border: none;
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    border: 2px solid $color-grey-border;
+    border-radius: 1px;
+    width: 100%;
+  }
+}
+
+.feeling__title {
+  color: $color-magenta;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet) {
+    display: block;
+    padding: 0 31px;
+    margin-bottom: 0;
+  }
 }
 
 .feeling__item {
@@ -10,16 +43,8 @@
   line-height: 30px;
 
   @media (min-width: $tablet) {
-    flex-direction: row;
+    padding: 47px 60px 53px;
   }
-}
-
-.feeling__label {
-  color: $color-magenta;
-  font-size: 14px;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 22px;
 }
 
 .feeling__text {
@@ -32,26 +57,28 @@
 .feeling__input {
   border: none;
   overflow: auto;
+  outline: none;
+  width: 100%;
 }
 
-input::-webkit-input-placeholder {
+.feeling__input::-webkit-input-placeholder {
   color: $color-grey;
   font-size: 18px;
 }
 
-input::-moz-placeholder {
+.feeling__input::-moz-placeholder {
   color: $color-grey;
   font-size: 18px;
 }
 
 /* Firefox 19+ */
-input:-moz-placeholder {
+.feeling__input:-moz-placeholder {
   color: $color-grey;
   font-size: 18px;
 }
 
 /* Firefox 18- */
-input:-ms-input-placeholder {
+.feeling__input:-ms-input-placeholder {
   color: $color-grey;
   font-size: 18px;
 }

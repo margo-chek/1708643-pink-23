@@ -3,20 +3,20 @@
   flex-direction: column;
   width: 100%;
   min-width: $mobile;
-  height: 200px;
+  height: 100%;
   position: relative;
   top: 75px;
   margin-bottom: 75px;
 
   @media (min-width: $tablet) {
-    width: 660px;
-    height: 110px;
+    min-width: 660px;
+    width: 100%;
     display: flex;
   }
 
   @media (min-width: $desktop) {
-    width: $desktop;
-    height: 110px;
+    min-width: $desktop;
+    width: 100%;
   }
 
   &::before {
@@ -33,17 +33,28 @@
     max-width: 1200px;
     height: 123px;
     overflow-x: hidden;
+
+    @media (min-width: $tablet) {
+      background-position: center top -36px;
+    }
+
+    @media (min-width: $desktop) {
+      background-image: url("../img/triangle-map-desktop.svg");
+      background-position: center top -20px;
+    }
   }
 }
 
 .map iframe {
   @media (min-width: $tablet) {
-    width: 660px;
-    height: 374px;
+    min-width: 660px;
+    width: 100%;
+    min-height: 374px;
   }
 
   @media (min-width: $desktop) {
-    width: $desktop;
-    height: 502px;
+    min-width: $desktop;
+    width: 100%;
+    min-height: 502px;
   }
 }

@@ -9,14 +9,7 @@
   align-items: center;
 
   @media (min-width: $tablet) {
-    width: 660px;
-    height: 110px;
-    display: flex;
-  }
-
-  @media (min-width: $desktop) {
-    width: $desktop;
-    height: 110px;
+    flex-direction: row;
   }
 }
 
@@ -26,6 +19,10 @@
   margin: 40px auto 0;
   width: 145px;
   height: 40px;
+
+  @media (min-width: $tablet) {
+    margin: auto 0;
+  }
 }
 
 .logo-glasses {
@@ -43,6 +40,7 @@
 .page-footer__social-networks {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin: 41px auto;
 }
 
@@ -51,19 +49,25 @@
   flex-direction: row;
   justify-content: center;
   padding-left: 0;
+  margin: 0;
 }
 
 .social-networks__item {
   display: block;
-  margin-left: 15px;
   width: 48px;
   height: 48px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  margin-left: 15px;
 }
 
 .social-networks__link {
   display: block;
   border-radius: 50%;
   border-color: $color-grey;
+  text-decoration: none;
 }
 
 .social-networks__item:first-child {
@@ -76,6 +80,10 @@
   justify-content: center;
   margin: 0 auto 40px;
   width: 130px;
+
+  @media (min-width: $tablet) {
+    margin: auto 0;
+  }
 }
 
 .copyright__text {
@@ -84,10 +92,15 @@
   font-size: 14px;
   line-height: 18px;
   margin-right: 15px;
+
+  @media (min-width: $tablet) {
+    margin-top: 6px;
+  }
 }
 
 .copyright__link {
   display: flex;
   width: 27px;
   height: 34px;
+  text-decoration: none;
 }

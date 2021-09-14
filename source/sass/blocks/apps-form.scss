@@ -5,6 +5,30 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
+  display: flex;
+
+  @media (min-width: $tablet) {
+    order: 2;
+    background-color: $color-white;
+    padding: 42px 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 46%;
+    margin-left: 8%;
+    padding: 0;
+  }
+}
+
+.apps-form__fieldset {
+  border: none;
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    border: 2px solid $color-grey-border;
+    border-radius: 1px;
+    width: 100%;
+  }
 }
 
 .apps-form__title {
@@ -15,14 +39,31 @@
   font-size: 14px;
   line-height: 18px;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    padding: 0 25px;
+  }
 }
 
 .apps-form__list {
-  padding-left: 20px;
+  padding: 0 0 0 20px;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    padding: 49px 0 54px 20px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 49px 0 54px 74px;
+  }
 }
 
 .apps-form__radio {
-  padding-left: 55px;
+  padding: 0 0 0 55px;
+  list-style: none;
+  margin: 0;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .apps-form__radio:not(:last-child) {
@@ -37,7 +78,7 @@
 .apps-form__input:hover + label::before {
   content: "";
   position: absolute;
-  left: 20px;
+  left: 0;
   width: 39px;
   height: 39px;
   background: $color-white;
@@ -54,7 +95,7 @@
 .apps-form__input:checked + label::before {
   content: "";
   position: absolute;
-  left: 20px;
+  left: 0;
   width: 39px;
   height: 39px;
   background: $color-white;
@@ -65,7 +106,7 @@
 .apps-form__input:checked + label::after {
   content: "";
   position: absolute;
-  left: 32px;
+  left: 12px;
   margin-top: 12px;
   width: 15px;
   height: 15px;

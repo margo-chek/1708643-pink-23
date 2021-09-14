@@ -3,9 +3,11 @@
   width: 100%;
   min-width: $mobile;
   position: relative;
+  z-index: 999;
 
   @media (min-width: $tablet) {
-    width: 660px;
+    min-width: 660px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -14,23 +16,24 @@
   }
 
   @media (min-width: $desktop) {
-    width: $desktop;
+    min-width: $desktop;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     background-color: $color-grey-background;
     padding: 17px 131px 67px;
   }
 }
 
 .banner__text {
-  padding-top: 48px;
+  padding: 48px 0 0 72px;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
 
   @media (min-width: $desktop) {
-    padding: 98px 0 0 71px;
+    padding: 98px 0 53px 71px;
   }
 }
 
@@ -40,22 +43,38 @@
   font-size: 30px;
   line-height: 36px;
   width: 169px;
+  margin: 0;
 
   @media (min-width: $desktop) {
+    line-height: 30px;
     width: 300px;
   }
 }
 
 .banner__description {
   color: $color-grey;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
   padding: 24px 0;
+  margin: 0;
 
   @media (min-width: $desktop) {
-    padding: 37px 0 47px;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 37px 75px 47px 0;
   }
 }
 
 .banner__link {
   color: $color-magenta;
   text-decoration: underline;
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

@@ -4,20 +4,23 @@
   line-height: 30px;
   padding: 54px 20px 55px;
   min-width: $mobile;
+  width: 100%;
   color: $color-grey;
 
   @media (min-width: $tablet) {
     background-size: cover;
-    min-width: $tablet;
+    font-size: 18px;
+    padding: 100px 20px 82px;
   }
 
   @media (min-width: $desktop) {
-    min-width: $desktop;
+    padding-bottom: 84px;
   }
 }
 
 .post__text {
   text-align: center;
+  margin: 0;
 }
 
 .post__text--add {

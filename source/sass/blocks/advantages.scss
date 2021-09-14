@@ -2,37 +2,89 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-width: $mobile;
   text-align: center;
   align-items: center;
+  position: relative;
+}
+
+.advantages__wrapper {
+  width: $mobile;
+  margin: 0 auto;
   background-color: $color-grey-background;
 
   @media (min-width: $tablet) {
-    width: 660px;
-    height: 110px;
+    width: 620px;
+    background-color: $color-white;
   }
 
   @media (min-width: $desktop) {
-    width: $desktop;
-    height: 110px;
+    width: 936px;
   }
 }
 
-.advantages-block {
+.advantages__block {
   background-color: $color-white;
-  padding: 46px 20px 70px;
+  padding: 46px 0 70px;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    padding: 58px 0 47px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 77px 0 72px;
+  }
 }
 
-.advantages-title {
+.advantages__block::after {
+  content: "";
+  background-image: url("../img/grey-background-mask-top-mobile.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 182px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+  width: 100%;
+  min-width: $mobile;
+  height: 980px;
+  overflow: hidden;
+
+  @media (min-width: $tablet) {
+    background-image: url("../img/grey-background-mask-top-tablet.svg");
+    top: 264px;
+    height: 620px;
+  }
+
+  @media (min-width: $desktop) {
+    background-image: url("../img/grey-background-mask-top-desktop.svg");
+    top: 392px;
+    height: 968px;
+  }
+}
+
+.advantages__block-title {
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
   align-items: center;
   text-align: center;
   color: $color-grey;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
-.advantages-title:first-child {
+.advantages__block-title:first-child {
   padding-bottom: 28px;
 
   @media (min-width: $tablet) {
@@ -41,50 +93,110 @@
 }
 
 .advantages__list {
+  display: flex;
+  flex-direction: column;
   padding: 52px 20px 0;
   position: relative;
   z-index: 99;
-}
+  margin: 0;
 
-.advantages__list::before {
-  content: "";
-  background-image: url("../img/grey-background-mask-top-mobile.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -75px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -1;
-  width: 100%;
-  max-width: $mobile;
-  height: 828px;
-  overflow: hidden;
+  @media (min-width: $tablet) {
+    margin-left: 312px;
+    width: 348px;
+    padding: 52px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
 .advantages__item {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.advantages__img {
+  z-index: 99;
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
+    z-index: -1;
+  }
+}
+
+.advantages__item--friends {
+  position: relative;
+}
+
+.advantages__item--friends .advantages__img {
+  display: block;
+  order: 3;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    bottom: -64px;
+    left: -312px;
+  }
+
+  @media (min-width: $desktop) {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    order: 0;
+  }
 }
 
 .advantages__title {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  align-items: center;
   text-align: center;
   color: $color-black;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    text-align: left;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: center;
+    padding: 59px 30px 35px;
+    background-color: $color-grey-background;
+    margin: -80px auto 0;
+  }
 }
 
 .advantages__description {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  align-items: center;
   text-align: center;
   color: $color-grey;
   padding: 24px 0 43px;
-}
+  margin: 0;
 
-.advantages__img {
-  z-index: 99;
+  @media (min-width: $tablet) {
+    text-align: left;
+    width: 310px;
+    padding-bottom: 46px;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: center;
+    width: 252px;
+    margin: 0 auto;
+    padding-bottom: 59px;
+  }
 }

@@ -1,6 +1,14 @@
 .author {
   background-color: $color-white;
   padding-bottom: 15px;
+
+  @media (min-width: $tablet) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop) {
+    width: 46%;
+  }
 }
 
 .author__item {
@@ -11,6 +19,7 @@
 
   @media (min-width: $tablet) {
     flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -21,38 +30,58 @@
   font-size: 14px;
   text-transform: uppercase;
   padding-left: 43px;
+
+  @media (min-width: $tablet) {
+    padding-left: 0;
+  }
 }
 
 .author__surname,
 .author__name,
 .author__patronymic {
   margin: 17px 22px 29px;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    margin: 17px 0 29px 22px;
+  }
 }
 
 .author__surname-input,
 .author__name-input,
 .author__patronymic-input {
   padding: 23px 20px;
+  width: 100%;
+  border: 2px solid $color-grey-border;
+  border-radius: 1px;
 }
 
-input::-webkit-input-placeholder {
+.author__surname-input::-webkit-input-placeholder,
+.author__name-input::-webkit-input-placeholder,
+.author__patronymic-input::-webkit-input-placeholder {
   color: $color-grey;
   font-size: 18px;
 }
 
-input::-moz-placeholder {
+.author__surname-input::-moz-placeholder,
+.author__name-input::-moz-placeholder,
+.author__patronymic-input::-moz-placeholder {
   color: $color-grey;
   font-size: 18px;
 }
 
 /* Firefox 19+ */
-input:-moz-placeholder {
+.author__surname-input:-moz-placeholder,
+.author__name-input:-moz-placeholder,
+.author__patronymic-input:-moz-placeholder {
   color: $color-grey;
   font-size: 18px;
 }
 
 /* Firefox 18- */
-input:-ms-input-placeholder {
+.author__surname-input:-ms-input-placeholder,
+.author__name-input:-ms-input-placeholder,
+.author__patronymic-input:-ms-input-placeholder {
   color: $color-grey;
   font-size: 18px;
 }

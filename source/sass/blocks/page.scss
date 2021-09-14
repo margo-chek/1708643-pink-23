@@ -2,7 +2,6 @@
   margin: 0 auto;
   min-width: $mobile;
   width: 100%;
-  overflow-x: hidden;
   font-family: $font;
   height: 100%;
   font-size: 18px;
@@ -14,13 +13,17 @@
   position: relative;
 
   @media (min-width: $tablet) {
-    width: 660px;
-    height: 110px;
     display: flex;
   }
 
   @media (min-width: $desktop) {
-    width: $desktop;
-    height: 110px;
+    min-width: $desktop;
+    width: 100%;
   }
+}
+
+.page__header-wrapper {
+  background: rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 9;
 }

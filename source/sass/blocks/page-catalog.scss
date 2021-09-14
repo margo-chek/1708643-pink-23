@@ -3,6 +3,12 @@
   background-color: $color-white;
   color: $color-grey;
   margin-top: -66px;
+  width: 100%;
+  min-width: $mobile;
+
+  @media (min-width: $tablet) {
+    margin-top: -110px;
+  }
 }
 
 .page-catalog__top-block {
@@ -16,8 +22,8 @@
   }
 
   @media (min-width: $tablet) {
-    width: 660px;
-    height: 110px;
+    min-width: 660px;
+    width: 100%;
     background-image: url("../img/back_tablet.png");
 
     @media (min-resolution: 2dppx) {
@@ -26,8 +32,8 @@
   }
 
   @media (min-width: $desktop) {
-    width: $desktop;
-    height: 110px;
+    min-width: $desktop;
+    width: 100%;
     background-image: url("../img/back-desktop.png");
 
     @media (min-resolution: 2dppx) {
@@ -43,6 +49,16 @@
   font-size: 24px;
   line-height: 33px;
   text-align: center;
-  height: 237px;
-  padding-top: 102px;
+  padding: 102px 0 74px;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 50px;
+    line-height: 68px;
+    padding: 191px 0 143px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 184px 0 104px;
+  }
 }

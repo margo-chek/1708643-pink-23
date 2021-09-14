@@ -5,6 +5,25 @@
   font-size: 18px;
   line-height: 30px;
   padding-bottom: 44px;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    order: 4;
+    background-color: $color-white;
+    margin-top: 65px;
+    padding-bottom: 0;
+  }
+}
+
+.achievements__fieldset {
+  border: none;
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    border: 2px solid $color-grey-border;
+    border-radius: 1px;
+    width: 100%;
+  }
 }
 
 .achievements__title {
@@ -15,14 +34,32 @@
   font-size: 14px;
   line-height: 18px;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    padding: 0 31px 0;
+  }
 }
 
 .achievements__list {
-  padding-left: 20px;
+  padding: 0 0 0 20px;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    padding: 49px 60px 50px;
+  }
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .achievements__checkbox {
-  padding-left: 55px;
+  padding: 0 0 0 55px;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 0;
+  position: relative;
 }
 
 .achievements__checkbox:not(:last-child) {
@@ -37,7 +74,7 @@
 .achievements__input:hover + label::before {
   content: "";
   position: absolute;
-  left: 20px;
+  left: 0;
   width: 39px;
   height: 39px;
   background: $color-white;
@@ -54,7 +91,7 @@
 .achievements__input:checked + label::before {
   content: "";
   position: absolute;
-  left: 20px;
+  left: 0;
   background: $color-white;
   border: none;
   border-radius: 0;

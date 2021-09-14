@@ -8,44 +8,49 @@
   </head>
 
   <body class="page__body">
-    <header class="page-header page-header--closed">
-      <a class="page-header__logo logo" href="index.html">
-        <svg fill="#ffffff"  width="74" height="23">
-          <use xlink:href="img/sprite.svg#logo-pink-header"></use>
-        </svg>
-      </a>
-      <nav class="page-header__nav nav">
-        <button class="page-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="page-header__wrapper">
-          <ul class="page-header__list">
-            <li class="page-header__item">
-              <a class="page-header__link" href="index.html">Главная</a>
-            </li>
-            <li class="page-header__item">
-              <a class="page-header__link" href="catalog.html">Фотографии</a>
-            </li>
-            <li class="page-header__item">
-              <a class="page-header__link">Конкурс</a>
-            </li>
-            <li class="page-header__item">
-              <a class="page-header__link" href="https://htmlacademy.ru">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <div class="page__header-wrapper">
+      <header class="page-header page-header--closed">
+        <a class="page-header__logo logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-top-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-top-tablet.svg">
+            <img src="img/logo-pink-top-mobile.svg" alt="Логотип Пинк">
+          </picture>
+        </a>
+        <nav class="page-header__nav nav">
+          <button class="page-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="page-header__wrapper">
+            <ul class="page-header__list">
+              <li class="page-header__item">
+                <a class="page-header__link" href="index.html">Главная</a>
+              </li>
+              <li class="page-header__item">
+                <a class="page-header__link" href="catalog.html">Фотографии</a>
+              </li>
+              <li class="page-header__item">
+                <a class="page-header__link">Конкурс</a>
+              </li>
+              <li class="page-header__item">
+                <a class="page-header__link" href="https://htmlacademy.ru">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
 
-    <main class="page-form wrapper">
+    <main class="page-form">
       <div class="page-form__top-block">
-        <h1 class="page-form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h1 class="page-form__title">Конкурс на самое <span class="page-form__title--desktop"></span>безбашенное<br>путешествие с Пинк</h1>
       </div>
-      <section class="post wrapper">
+      <div class="wrapper">
+      <section class="post">
         <p class="post__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="post__text--add"> Пожалуйста, заполните форму ниже:</span></p>
       </section>
-      <form class="form-container" method="post" action="https://echo.htmlacademy.ru">
-        <section class="author wrapper">
+      <form class="page-form__container" method="post" action="https://echo.htmlacademy.ru">
+        <section class="author">
           <div class="author__item">
             <label class="author__surname-label" for="surname">ФАМИЛИЯ:</label>
             <div class="author__surname">
@@ -65,8 +70,8 @@
             </div>
           </div>
         </section>
-        <section class="achievements wrapper">
-          <fieldset>
+        <section class="achievements">
+          <fieldset class="achievements__fieldset">
             <legend class="achievements__title">Ваши безбашенные достижения в путешествии</legend>
             <ul class="achievements__list">
               <li class="achievements__checkbox">
@@ -96,32 +101,35 @@
             </ul>
           </fieldset>
         </section>
-        <section class="author-contacts wrapper">
-          <div class="author-contacts__item">
-            <label class="author-contacts__phone-label" for="phone">НОМЕР ТЕЛЕФОНА</label>
-            <div class="author-contacts__phone">
-              <input class="author-contacts__phone-input" id="phone" type="text" name="phone" placeholder="Номер, пожалуйста" required>
-                <button class="author-contacts__phone-icon" type="button" aria-label="Кнопка-иконка телефон">
-                  <svg width="20" height="19">
-                    <use xlink:href="img/sprite.svg#icon-phone"></use>
-                  </svg>
-                </button>
+        <section class="author-contacts">
+          <fieldset class="author-contacts__fieldset">
+            <legend class="author-contacts__title">Контактная информация</legend>
+            <div class="author-contacts__item">
+              <label class="author-contacts__phone-label" for="phone">НОМЕР ТЕЛЕФОНА</label>
+              <div class="author-contacts__phone">
+                <input class="author-contacts__phone-input" id="phone" type="text" name="phone" placeholder="Номер, пожалуйста" required>
+                  <button class="author-contacts__phone-icon" type="button" aria-label="Кнопка-иконка телефон">
+                    <svg width="20" height="19">
+                      <use xlink:href="img/sprite.svg#icon-phone"></use>
+                    </svg>
+                  </button>
+              </div>
             </div>
-          </div>
-          <div class="author-contacts__item">
-            <label class="author-contacts__address-label" for="address">АДРЕС ПОЧТЫ</label>
-            <div class="author-contacts__address">
-              <input class="author-contacts__address-input" id="address" type="text" name="address" placeholder="Введите почту *" required>
-                <button class="author-contacts__mail-icon" type="button" aria-label="Кнопка-иконка email">
-                  <svg width="18" height="13">
-                    <use xlink:href="img/sprite.svg#icon-mail"></use>
-                  </svg>
-                </button>
+            <div class="author-contacts__item">
+              <label class="author-contacts__address-label" for="address">АДРЕС ПОЧТЫ</label>
+              <div class="author-contacts__address">
+                <input class="author-contacts__address-input" id="address" type="text" name="address" placeholder="Введите почту *" required>
+                  <button class="author-contacts__mail-icon" type="button" aria-label="Кнопка-иконка email">
+                    <svg width="18" height="13">
+                      <use xlink:href="img/sprite.svg#icon-mail"></use>
+                    </svg>
+                  </button>
+              </div>
             </div>
-          </div>
+          </fieldset>
         </section>
-        <section class="apps-form wrapper">
-          <fieldset>
+        <section class="apps-form">
+          <fieldset class="apps-form__fieldset">
             <legend class="apps-form__title">С каким приложением путешествовали?</legend>
             <ul class="apps-form__list">
               <li class="apps-form__radio">
@@ -139,79 +147,89 @@
             </ul>
           </fieldset>
         </section>
-        <section class="feeling wrapper">
-          <div class="feeling__item">
-            <label class="feeling__label" for="feeling">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
-            <div class="feeling__text">
-              <textarea class="feeling__input" id="feeling" type="text" name="feeling" cols="30" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях" required></textarea>
+        <section class="feeling">
+          <fieldset class="feeling__fieldset">
+            <legend class="feeling__title">Опишите свои эмоции</legend>
+            <div class="feeling__item">
+              <div class="feeling__text">
+                <textarea class="feeling__input" type="text" name="feeling" cols="30" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях" required></textarea>
+              </div>
             </div>
-          </div>
+          </fieldset>
         </section>
-        <section class="submit wrapper">
+        <section class="submit">
           <button class="submit__button button" type="submit">Отправить форму</button>
           <div class="submit__comment"><span class="mark">*</span> — обязательные поля</div>
         </section>
       </form>
+    </div>
     </main>
 
-    <section class="popup-error wrapper">
+    <section class="popup-error">
       <h2 class="popup-error__title">Что-то пошло не так!</h2>
       <p class="popup-error__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="popup-error__button button button--popup-close" type="button">ОК</button>
+      <div class="popup-error__button-wrapper">
+        <button class="popup-error__button button button--popup-close" type="button">ОК</button>
+      </div>
     </section>
 
-    <section class="popup-submit-ok wrapper">
+    <section class="popup-submit-ok">
       <h2 class="popup-submit-ok__title">Ваша заявка отправлена</h2>
       <p class="popup-submit-ok__description">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-      <div class="button-wrapper">
+      <div class="popup-submit-ok__button-wrapper">
         <button class="popup-submit-ok__button button button--popup-close" type="button">Закрыть окно</button>
       </div>
     </section>
 
-    <footer class="page-footer wrapper">
-      <div class="page-footer__logo logo" href="#">
-        <svg fill="#283645">
-          <use xlink:href="img/sprite.svg#logo-glasses"></use>
-          <use xlink:href="img/sprite.svg#logo-pink"></use>
-        </svg>
-      </div>
-      <div class="page-footer__social-networks">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="social-networks__list">
-          <li class="social-networks__item">
-            <a class="social-networks__link social__link--twitter" href="https://www.twitter.com/htmlacademy" aria-label="Логотип Twitter">
-              <span class="visually-hidden">Твиттер</span>
-              <svg width="54" height="54">
-                <use xlink:href="img/sprite.svg#twitter-icon"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-networks__item">
-            <a class="social-networks__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Логотип Facebook">
-              <span class="visually-hidden">Фейсбук</span>
-              <svg width="54" height="54">
-                <use xlink:href="img/sprite.svg#facebook-icon"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-networks__item">
-            <a class="social-networks__link social__link--youtube" href="https://www.youtube.com/htmlacademy" aria-label="Логотип Youtube">
-              <span class="visually-hidden">Ютуб</span>
-              <svg width="54" height="54">
-                <use xlink:href="img/sprite.svg#youtube-icon"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <div class="copyright__text">Разработано</div>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg width="27" height="34">
-            <use xlink:href="img/sprite.svg#htmlacademy-logo"></use>
-          </svg>
-        </a>
-      </div>
-    </footer>
+    <div class="wrapper">
+      <footer class="page-footer">
+        <div>
+          <a class="page-footer__logo logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-pink-bottom-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-bottom.svg">
+              <img src="img/logo-pink-bottom.svg" alt="Логотип Пинк">
+            </picture>
+          </a>
+        </div>
+        <div class="page-footer__social-networks">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="social-networks__list">
+            <li class="social-networks__item">
+              <a class="social-networks__link social__link--twitter" href="https://www.twitter.com/htmlacademy" aria-label="Логотип Twitter">
+                <span class="visually-hidden">Твиттер</span>
+                <svg width="54" height="54">
+                  <use xlink:href="img/sprite.svg#twitter-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-networks__item">
+              <a class="social-networks__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Логотип Facebook">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg width="54" height="54">
+                  <use xlink:href="img/sprite.svg#facebook-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-networks__item">
+              <a class="social-networks__link social__link--youtube" href="https://www.youtube.com/htmlacademy" aria-label="Логотип Youtube">
+                <span class="visually-hidden">Ютуб</span>
+                <svg width="54" height="54">
+                  <use xlink:href="img/sprite.svg#youtube-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <div class="copyright__text">Разработано</div>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg width="27" height="34">
+              <use xlink:href="img/sprite.svg#htmlacademy-logo"></use>
+            </svg>
+          </a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

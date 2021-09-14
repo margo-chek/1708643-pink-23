@@ -3,21 +3,23 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-width: $mobile;
   margin-top: -66px;
   background-image: url("../img/back-mobile.png");
   background-position: center;
   background-color: $color-grey-background;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -2;
+
+  @media (min-width: $tablet) {
+    margin-top: -110px;
+  }
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-tablet@2x.png");
   }
 
   @media (min-width: $tablet) {
-    width: 660px;
-    height: 110px;
     background-image: url("../img/back_tablet.png");
 
     @media (min-resolution: 2dppx) {
@@ -26,8 +28,6 @@
   }
 
   @media (min-width: $desktop) {
-    width: $desktop;
-    height: 110px;
     background-image: url("../img/back-desktop.png");
 
     @media (min-resolution: 2dppx) {
@@ -44,17 +44,62 @@
   line-height: 120%;
   text-align: center;
   padding: 95px 20px 34px;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    width: 184px;
+    margin-left: 58px;
+    padding: 182px 0 34px;
+    font-size: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 230px;
+    margin-left: 28px;
+    padding: 182px 0 34px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.apps__img {
+  margin: 0;
+  z-index: -1;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    right: 0;
+  }
 }
 
 .apps__mobile {
   background-color: $color-grey;
+  padding: 38px 0;
 
   @media (min-width: $tablet) {
-    background-color: inherit;
+    background-color: transparent;
+    padding: 0;
   }
 }
 
-.apps__button {
+.button {
+  border: 3px solid #283645;
+  box-sizing: border-box;
+  border-radius: 30px;
+  text-align: center;
+  padding: 21px;
+  width: 280px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.apps__button.button {
   display: flex;
   color: $color-white;
   font-weight: bold;
@@ -67,6 +112,15 @@
   border-radius: 29px;
   margin: 28px auto 32px;
   padding: 21px 35px;
+  text-decoration: none;
+
+  @media (min-width: $tablet) {
+    margin: 39px 0 46px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 39px 0 46px 2px;
+  }
 }
 
 .apps__select {
@@ -79,6 +133,16 @@
   justify-content: space-around;
   margin: 0 auto;
   align-items: flex-end;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet) {
+    margin-left: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 32px;
+  }
 }
 
 .apps__item:not(:last-child) {
@@ -87,6 +151,7 @@
 
 .apps__link {
   bottom: 0;
+  text-decoration: none;
 }
 
 .apps__description {
@@ -99,10 +164,20 @@
   text-align: center;
   color: $color-white;
   padding: 0 8px;
+
+  @media (min-width: $tablet) {
+    margin: 38px 0 119px;
+    width: 300px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 38px 0 119px 2px;
+  }
 }
 
 .app__fieldset {
   border: none;
+  padding: 0;
 }
 
 .app__headline {
@@ -115,6 +190,10 @@
 .app__item {
   font-size: 18px;
   font-weight: 400;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
 .app__item::marker {
