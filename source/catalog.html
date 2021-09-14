@@ -152,21 +152,33 @@
         <div class="edit__info">
           <ul class="edit__tool-list">
             <li class="edit__tool-item edit__tool-item--active">
-              <img src="img/catalog/icon-crop.svg" width="44" height="44" alt="Обрезать">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/icon-crop-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/catalog/icon-crop-tablet.svg">
+                <img src="img/catalog/icon-crop.svg" alt="Обрезать">
+              </picture>
               <div class="edit__range-controls edit__range-controls--active">
                 <div class="edit__scale"></div>
                 <div class="edit__toggle" aria-label="Переключатель значения"></div>
               </div>
             </li>
             <li class="edit__tool-item">
-              <img src="img/catalog/icon-fill.svg" width="48" height="43" alt="Залить">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/icon-fill-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/catalog/icon-fill-tablet.svg">
+                <img src="img/catalog/icon-fill.svg" alt="Залить">
+              </picture>
               <div class="edit__range-controls">
                 <div class="edit__scale"></div>
                 <div class="edit__toggle" aria-label="Переключатель значения"></div>
               </div>
             </li>
             <li class="edit__tool-item">
-              <img src="img/catalog/icon-contrast.svg" width="32" height="32" alt="Контраст">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/icon-contrast-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/catalog/icon-contrast-tablet.svg">
+                <img src="img/catalog/icon-contrast.svg" alt="Контраст">
+              </picture>
               <div class="edit__range-controls">
                 <div class="edit__scale"></div>
                 <div class="edit__toggle" aria-label="Переключатель значения"></div>
