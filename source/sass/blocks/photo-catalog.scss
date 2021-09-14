@@ -44,6 +44,13 @@
 .photo-catalog__item--panorama .photo-catalog__description {
   margin: 0 20px;
 
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   @media (min-width: $desktop) {
     width: 940px;
     margin: 0 auto;
@@ -101,6 +108,8 @@
 }
 
 .photo-catalog__description {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
   padding: 25px 10px 26px 17px;
   background-color: $color-grey-background;
@@ -111,10 +120,12 @@
 
   @media (min-width: $tablet) {
     min-height: 155px;
+    padding: 30px 10px 31px 30px;
   }
 
   @media (min-width: $desktop) {
     min-height: 154px;
+    padding: 30px 10px 27px 27px;
   }
 }
 
@@ -122,6 +133,16 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
+}
+
+.photo-catalog__item--panorama .photo-catalog__author:first-child {
+  @media (min-width: $tablet) {
+    margin-left: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 27px;
+  }
 }
 
 .photo-catalog__author span {
@@ -136,13 +157,24 @@
   font-size: 14px;
   line-height: 24px;
   margin: 14px 0 27px;
+}
 
+.photo-catalog__item--panorama .photo-catalog__name {
   @media (min-width: $tablet) {
-    min-height: 34px;
+    order: 3;
+    margin: 14px 30px 11px;
   }
 
   @media (min-width: $desktop) {
-    min-height: 89px;
+    order: 3;
+    margin: 14px 10px 0;
+    min-height: 10px;
+  }
+}
+
+.photo-catalog__wrapper .photo-catalog__name {
+  @media (min-width: $tablet) {
+    min-height: 48px;
   }
 }
 
@@ -150,6 +182,10 @@
   color: $color-magenta;
   position: relative;
   padding-left: 31px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
 
   &::after {
     position: absolute;
@@ -157,8 +193,34 @@
     width: 100%;
     left: 0;
     content: "";
-    bottom: 0;
+    bottom: 4px;
     background-image: url("../img/heart.svg");
     background-repeat: no-repeat;
+  }
+}
+
+.photo-catalog__item--panorama .photo-catalog__like {
+  @media (min-width: $tablet) {
+    padding-right: 39px;
+  }
+
+  &::after {
+    @media (min-width: $tablet) {
+      left: 132px;
+      bottom: 5px;
+    }
+  }
+}
+
+.photo-catalog__wrapper .photo-catalog__like {
+  @media (min-width: $tablet) {
+    padding-left: 0;
+  }
+
+  &::after {
+    @media (min-width: $tablet) {
+      left: 228px;
+      bottom: 4px;
+    }
   }
 }
