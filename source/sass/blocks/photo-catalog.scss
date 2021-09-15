@@ -1,14 +1,15 @@
 .photo-catalog {
-  width: $mobile;
-  margin: 0 auto;
+  // min-width: $mobile;
+  width: 100%;
+  // margin: 0 auto;
 
-  @media (min-width: $tablet) {
-    width: $tablet;
-  }
+  // @media (min-width: $tablet) {
+  //   width: $tablet;
+  // }
 
-  @media (min-width: $desktop) {
-    width: $desktop;
-  }
+  // @media (min-width: $desktop) {
+  //   width: $desktop;
+  // }
 }
 
 .photo-catalog__list {
@@ -42,18 +43,19 @@
 }
 
 .photo-catalog__item--panorama .photo-catalog__description {
-  margin: 0 20px;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 620px;
   }
 
   @media (min-width: $desktop) {
     width: 940px;
-    margin: 0 auto;
   }
 }
 

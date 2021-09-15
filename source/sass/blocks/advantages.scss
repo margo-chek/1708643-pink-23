@@ -10,7 +10,7 @@
 .advantages__wrapper {
   width: $mobile;
   margin: 0 auto;
-  // background-image: linear-gradient(0deg, #f2f2f2 80%, #fff 80%);
+  background-image: linear-gradient(0deg, $color-grey-background 80%, $color-white 80%);
   background-color: $color-grey-background;
 
   @media (min-width: $tablet) {
@@ -96,6 +96,7 @@
 .advantages__list {
   display: flex;
   flex-direction: column;
+  background-color: $color-grey-background;
   padding: 52px 20px 0;
   position: relative;
   z-index: 99;
@@ -104,6 +105,7 @@
   @media (min-width: $tablet) {
     margin-left: 312px;
     width: 348px;
+    background-color: $color-white;
     padding: 52px 0 0;
   }
 

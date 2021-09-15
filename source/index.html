@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
     <title>HTML Academy: Пинк</title>
   </head>
 
@@ -121,11 +122,17 @@
       </section>
 
       <section class="banner">
-        <img class="banner__img" src="img/24-tablet.svg" width="238" height="276"               alt="Таймер">
-        <div class="banner__text">
-          <h3 class="banner__title">Эффект на 24 часа!</h3>
-          <p class="banner__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a class="banner__link" href="#">Узнать больше об исследовании</a>
+        <div class="banner-wrapper">
+          <picture class="banner__img" >
+            <source media="(min-width: 1200px)" srcset="img/banner24-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/banner24-tablet.svg">
+            <img src="img/banner24-tablet.svg" alt="Таймер">
+          </picture>
+          <div class="banner__text">
+            <h3 class="banner__title">Эффект на 24 часа!</h3>
+            <p class="banner__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="banner__link" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
       </section>
 
