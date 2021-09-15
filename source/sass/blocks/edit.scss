@@ -1,13 +1,26 @@
 .edit {
   background-color: $color-grey-background;
+
+  @media (min-width: $desktop) {
+    width: 100%;
+    background-color: $color-white;
+  }
+}
+
+.edit-wrapper {
+  background-color: $color-grey-background;
   padding: 20px 20px 75px;
 
   @media (min-width: $tablet) {
     display: flex;
+    padding: 57px 0 54px;
+    width: 620px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop) {
-    padding: 57px 0 57px 80px;
+    padding: 57px 60px 57px 80px;
+    width: 960px;
   }
 }
 
@@ -20,13 +33,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 20px;
-    width: 320px;
+    padding: 8px 0 0 45px;
+    width: 325px;
   }
 
   @media (min-width: $desktop) {
-    padding-left: 90px;
-    width: 410px;
+    padding: 0 0 0 90px;
+    width: 500px;
   }
 }
 
@@ -39,6 +52,11 @@
 
   @media (min-width: $tablet) {
     flex-direction: column;
+    margin: 12px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
   }
 }
 
@@ -50,6 +68,11 @@
   @media (min-width: $tablet) {
     position: relative;
     display: flex;
+    padding-right: 18px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-right: 30px;
   }
 }
 
@@ -58,6 +81,23 @@
 
   @media (min-width: $tablet) {
     margin-right: 0;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+  }
+}
+
+.edit__tool-item:not(:first-child) {
+  @media (min-width: $tablet) {
+    margin: 25px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 30px 0 0;
   }
 }
 
@@ -68,8 +108,14 @@
   position: relative;
 
   @media (min-width: $tablet) {
+    align-items: center;
     display: flex;
+    margin-left: 29px;
     width: 100%;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 44px;
   }
 }
 
@@ -81,6 +127,7 @@
   left: 0;
 
   @media (min-width: $tablet) {
+    display: flex;
     position: relative;
   }
 }
@@ -103,16 +150,60 @@
   border-radius: 50%;
 }
 
-.button {
+.edit__tool-item:nth-child(1) .edit__toggle {
+  @media (min-width: $tablet) {
+    top: 4px;
+    left: 152px;
+  }
+
+  @media (min-width: $desktop) {
+    top: 7px;
+    left: 236px;
+  }
+}
+
+.edit__tool-item:nth-child(2) .edit__toggle {
+  @media (min-width: $tablet) {
+    top: 4px;
+    left: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    top: 6px;
+    left: 48px;
+  }
+}
+
+.edit__tool-item:nth-child(3) .edit__toggle {
+  @media (min-width: $tablet) {
+    top: 4px;
+    left: 96px;
+  }
+
+  @media (min-width: $desktop) {
+    top: 4px;
+    left: 136px;
+  }
+}
+
+.button-edit {
   border: 3px solid $color-grey;
   box-sizing: border-box;
   border-radius: 30px;
   text-align: center;
-  padding: 21px;
+  padding: 16px;
   width: 280px;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
+
+  @media (min-width: $tablet) {
+    width: 260px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 183px;
+  }
 }
 
 .edit__buttons {
@@ -134,12 +225,16 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+  }
+
   @media (min-width: $desktop) {
     flex-direction: row;
   }
 }
 
-.edit__button-input.button {
+.edit__button-input.button-edit {
   margin-bottom: 12px;
   color: $color-magenta;
   border-color: $color-magenta;
