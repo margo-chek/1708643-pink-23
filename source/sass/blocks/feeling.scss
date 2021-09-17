@@ -20,19 +20,32 @@
   }
 }
 
-.feeling__title {
+.feeling__title-legend,
+.feeling__title-label {
   color: $color-magenta;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 22px;
+}
+
+.feeling__title-legend {
+  display: none;
 
   @media (min-width: $tablet) {
     display: block;
     padding: 0 31px;
     margin-bottom: 0;
+  }
+}
+
+.feeling__title-label {
+  display: block;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet) {
+    display: none;
   }
 }
 

@@ -44,7 +44,7 @@
 
     <main class="page-form">
       <div class="page-form__top-block">
-        <h1 class="page-form__title">Конкурс на самое <span class="page-form__title--desktop"></span>безбашенное<br>путешествие с Пинк</h1>
+        <h1 class="page-form__title">Конкурс на самое <span class="page-form__title--add"></span>безбашенное<br>путешествие с Пинк</h1>
       </div>
       <div class="wrapper">
       <section class="post">
@@ -139,7 +139,7 @@
               </li>
               <li class="apps-form__radio">
                 <input class="apps-form__input" type="radio" name="android" id="android"  value="android">
-                <label for="ios">Pink на Android</label>
+                <label for="android">Pink на Android</label>
               </li>
               <li class="apps-form__radio">
                 <input class="apps-form__input" type="radio" name="windows-phone" id="windows-phone"  value="windows-phone">
@@ -150,10 +150,11 @@
         </section>
         <section class="feeling">
           <fieldset class="feeling__fieldset">
-            <legend class="feeling__title">Опишите свои эмоции</legend>
+            <legend class="feeling__title-legend">Опишите свои эмоции</legend>
             <div class="feeling__item">
+              <label class="feeling__title-label" for="feeling">Опишите свои эмоции</label>
               <div class="feeling__text">
-                <textarea class="feeling__input" type="text" name="feeling" cols="30" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях" required></textarea>
+                <textarea class="feeling__input" id="feeling" type="text" name="feeling" cols="30" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях" required></textarea>
               </div>
             </div>
           </fieldset>
