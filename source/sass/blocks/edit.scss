@@ -4,12 +4,14 @@
   @media (min-width: $desktop) {
     width: 100%;
     background-color: $color-white;
+    margin-top: -26px;
   }
 }
 
 .edit-wrapper {
   background-color: $color-grey-background;
-  padding: 20px 20px 75px;
+  padding: 6px 20px 54px;
+  margin-top: -31px;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -20,7 +22,7 @@
 
   @media (min-width: $desktop) {
     padding: 57px 60px 57px 80px;
-    width: 960px;
+    width: 940px;
   }
 }
 
@@ -189,7 +191,7 @@
 .edit__buttons {
   background-color: $color-grey-background;
   width: 100%;
-  margin: 27px 0 0;
+  margin: 18px 0 0;
   padding-top: 0;
   border-top: 1px solid rgba(40, 54, 69, 0.3);
 

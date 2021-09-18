@@ -28,6 +28,7 @@
 
 .page-header--closed {
   position: relative;
+  padding-top: 16px;
 }
 
 .page-header__logo {
@@ -35,10 +36,13 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  height: 69px;
+  flex-shrink: 0;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet) {
     padding-top: 40px;
+    height: 69px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop) {
@@ -126,6 +130,12 @@
   line-height: 18px;
 }
 
+.page-header__link--active {
+  @media (min-width: $desktop) {
+    border-bottom: 2px solid $color-white;
+  }
+}
+
 .page-header--opened .page-header__link {
   font-weight: bold;
   font-size: 18px;
@@ -154,7 +164,7 @@
 }
 
 .page-header--closed .page-header__toggle {
-  top: 32px;
+  top: 31px;
 
   @media (min-width: $tablet) {
     top: 48px;
