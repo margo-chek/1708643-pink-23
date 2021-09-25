@@ -2,7 +2,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
-  padding: 54px 20px 55px;
+  padding: 44px 20px 35px;
   min-width: $mobile;
   width: 100%;
   color: $color-grey;
@@ -10,11 +10,11 @@
   @media (min-width: $tablet) {
     background-size: cover;
     font-size: 18px;
-    padding: 100px 20px 82px;
+    padding: 91px 30px 72px;
   }
 
   @media (min-width: $desktop) {
-    padding-bottom: 84px;
+    padding: 91px 76px 67px;
   }
 }
 
@@ -29,5 +29,10 @@
   @media (min-width: $tablet) {
     display: flex;
     justify-content: center;
+  }
+
+  @media (min-width: $desktop) {
+    display: inline-flex;
+    padding-left: 5px;
   }
 }

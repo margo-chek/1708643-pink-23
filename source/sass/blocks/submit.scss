@@ -1,5 +1,5 @@
 .submit {
-  padding: 0 22px;
+  padding: 0 20px;
   margin: 0 auto;
   width: 100%;
 
@@ -8,11 +8,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 59px;
     align-items: center;
     overflow-y: hidden;
-    margin: 70px 0 50px;
+    margin: 65px 0 41px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 66px 0 30px;
   }
 }
 
@@ -37,10 +40,16 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+  padding: 15px;
+
+  @media (min-width: $tablet) {
+    padding: 15px;
+    width: 300px;
+  }
 }
 
 .submit__comment {
-  margin: 46px auto 26px;
+  margin: 33px auto 30px;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
@@ -49,6 +58,14 @@
 
   @media (min-width: $tablet) {
     margin: 0;
+  }
+}
+
+.submit__comment-add {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: inline-block;
   }
 }
 

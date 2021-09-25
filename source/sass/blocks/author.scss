@@ -1,13 +1,15 @@
 .author {
   background-color: $color-white;
-  padding-bottom: 15px;
+  padding: 0 20px 27px;
 
   @media (min-width: $tablet) {
     order: 1;
+    padding: 1px 0 0;
   }
 
   @media (min-width: $desktop) {
     width: 46%;
+    padding: 0;
   }
 }
 
@@ -20,6 +22,16 @@
   @media (min-width: $tablet) {
     flex-direction: row;
     align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 51px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-bottom: -2px;
+    }
   }
 }
 
@@ -29,31 +41,70 @@
   color: $color-magenta;
   font-size: 14px;
   text-transform: uppercase;
-  padding-left: 43px;
+  padding-left: 23px;
 
   @media (min-width: $tablet) {
     padding-left: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: -16px;
+    margin-left: -1px;
+  }
+}
+
+.author__name-label,
+.author__patronymic-label {
+  margin-top: 2px;
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: -19px;
+    margin-left: 0;
   }
 }
 
 .author__surname,
 .author__name,
 .author__patronymic {
-  margin: 17px 22px 29px;
+  margin: 5px 0 14px;
   width: 100%;
 
   @media (min-width: $tablet) {
-    margin: 17px 0 29px 22px;
+    margin: -1px 0 1px 18.6px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 17px 0 37px 18px;
   }
 }
 
 .author__surname-input,
 .author__name-input,
 .author__patronymic-input {
-  padding: 23px 20px;
+  padding: 20px 53px 20px 20px;
   width: 100%;
   border: 2px solid $color-grey-border;
   border-radius: 1px;
+
+  @media (min-width: $tablet) {
+    padding: 20px 61px 20px 20px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 20px 0 20px 20px;
+  }
+}
+
+.author__name-input {
+  padding: 20px 20px;
+}
+
+.author__patronymic-input {
+  padding: 20px 20px;
 }
 
 .author__surname-input::-webkit-input-placeholder,

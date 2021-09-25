@@ -2,7 +2,7 @@
   position: relative;
   background-color: $color-white;
   color: $color-grey;
-  margin-top: -69px;
+  margin-top: -76px;
   min-width: $mobile;
   width: 100%;
 
@@ -45,17 +45,17 @@
   font-size: 24px;
   line-height: 33px;
   text-align: center;
-  padding: 102px 46px 51px;
+  padding: 104px 46px 44px;
   margin: 0;
 
   @media (min-width: $tablet) {
     font-size: 50px;
     line-height: 68px;
-    padding: 191px 20px 74px;
+    padding: 177px 20px 59px;
   }
 
   @media (min-width: $desktop) {
-    padding: 184px 220px 104px;
+    padding: 169px 220px 89px;
   }
 
   &--add {
@@ -74,5 +74,6 @@
   @media (min-width: $desktop) {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 }

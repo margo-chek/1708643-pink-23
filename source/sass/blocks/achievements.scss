@@ -4,13 +4,13 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
-  padding-bottom: 44px;
+  padding-bottom: 48px;
   width: 100%;
 
   @media (min-width: $tablet) {
     order: 4;
     background-color: $color-white;
-    margin-top: 65px;
+    margin-top: 58px;
     padding-bottom: 0;
   }
 }
@@ -23,13 +23,14 @@
     border: 2px solid $color-grey-border;
     border-radius: 1px;
     width: 100%;
+    margin: 0;
   }
 }
 
 .achievements__title {
   color: $color-magenta;
   text-transform: uppercase;
-  padding: 42px 47px 44px;
+  padding: 41px 40px 39px;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
@@ -50,12 +51,14 @@
 
   @media (min-width: $desktop) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 257px 238px 206px;
+    grid-gap: 0 57px;
+    padding: 49px 60px 6px;
   }
 }
 
 .achievements__checkbox {
-  padding: 0 0 0 55px;
+  padding: 0 0 0 56px;
   list-style: none;
   flex-wrap: wrap;
   margin: 0;
@@ -63,7 +66,43 @@
 }
 
 .achievements__checkbox:not(:last-child) {
-  padding-bottom: 47px;
+  padding-bottom: 52px;
+}
+
+.achievements__checkbox:nth-child(1) {
+  @media (min-width: $desktop) {
+    order: 1;
+  }
+}
+
+.achievements__checkbox:nth-child(2) {
+  @media (min-width: $desktop) {
+    order: 4;
+  }
+}
+
+.achievements__checkbox:nth-child(3) {
+  @media (min-width: $desktop) {
+    order: 2;
+  }
+}
+
+.achievements__checkbox:nth-child(4) {
+  @media (min-width: $desktop) {
+    order: 5;
+  }
+}
+
+.achievements__checkbox:nth-child(5) {
+  @media (min-width: $desktop) {
+    order: 3;
+  }
+}
+
+.achievements__checkbox:nth-child(6) {
+  @media (min-width: $desktop) {
+    order: 6;
+  }
 }
 
 .achievements__input {
@@ -74,12 +113,23 @@
 .achievements__input:hover + label::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: -2px;
+  top: -3px;
   width: 39px;
   height: 39px;
   background: $color-white;
   border: 2px solid $color-grey-border;
   border-radius: 1px;
+
+  @media (min-width: $tablet) {
+    left: -2px;
+    top: -7px;
+  }
+
+  @media (min-width: $desktop) {
+    left: -3px;
+    top: -6px;
+  }
 }
 
 .achievements__input:focus + label::before {
@@ -91,13 +141,24 @@
 .achievements__input:checked + label::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: -2px;
+  top: -3px;
   background: $color-white;
   border: none;
   border-radius: 0;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  @media (min-width: $tablet) {
+    left: -2px;
+    top: -7px;
+  }
+
+  @media (min-width: $desktop) {
+    left: -3px;
+    top: -6px;
+  }
 }
 
 .achievements__input:disabled + label::before {

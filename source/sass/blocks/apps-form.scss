@@ -1,6 +1,6 @@
 .apps-form {
   background-color: $color-grey-background;
-  padding: 42px 22px;
+  padding: 39px 0 45px;
   color: $color-grey;
   font-weight: normal;
   font-size: 18px;
@@ -10,13 +10,13 @@
   @media (min-width: $tablet) {
     order: 2;
     background-color: $color-white;
-    padding: 42px 0;
+    padding: 57px 0 39px;
   }
 
   @media (min-width: $desktop) {
-    width: 46%;
-    margin-left: 8%;
-    padding: 0;
+    width: 46.52%;
+    margin-left: 70px;
+    padding: 5px 0;
   }
 }
 
@@ -28,13 +28,14 @@
     border: 2px solid $color-grey-border;
     border-radius: 1px;
     width: 100%;
+    margin: 0;
   }
 }
 
 .apps-form__title {
   color: $color-magenta;
   text-transform: uppercase;
-  padding-bottom: 44px;
+  padding-bottom: 36px;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
@@ -50,24 +51,41 @@
   margin: 0;
 
   @media (min-width: $tablet) {
-    padding: 49px 0 54px 20px;
+    padding: 49px 0 57px 61px;
   }
 
   @media (min-width: $desktop) {
-    padding: 49px 0 54px 74px;
+    padding: 43px 0 58px 73px;
   }
 }
 
 .apps-form__radio {
-  padding: 0 0 0 55px;
+  padding: 0 0 0 68px;
   list-style: none;
   margin: 0;
   flex-wrap: wrap;
   position: relative;
+
+  @media (min-width: $tablet) {
+    padding: 0 0 0 58px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 0 0 60px;
+    margin-top: 5px;
+  }
 }
 
 .apps-form__radio:not(:last-child) {
   padding-bottom: 47px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 41px;
+  }
 }
 
 .apps-form__input {
@@ -84,6 +102,11 @@
   background: $color-white;
   border: 2px solid $color-grey-border;
   border-radius: 50%;
+
+  @media (min-width: $tablet) {
+    left: -2px;
+    top: -5px;
+  }
 }
 
 .apps-form__input:focus + label::before {
@@ -106,13 +129,22 @@
 .apps-form__input:checked + label::after {
   content: "";
   position: absolute;
-  left: 12px;
-  margin-top: 12px;
+  left: 11px;
+  margin-top: 11px;
   width: 15px;
   height: 15px;
   background: $color-magenta;
   border: none;
   border-radius: 50%;
+
+  @media (min-width: $tablet) {
+    margin-top: 7px;
+    left: 12px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 8px;
+  }
 }
 
 .apps-form__input:disabled + label::before {
