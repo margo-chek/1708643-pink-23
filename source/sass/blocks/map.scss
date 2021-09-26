@@ -45,14 +45,13 @@
 }
 
 .map iframe {
+  width: 100%;
+  min-height: 200px;
+
   @media (min-width: $tablet) {
     min-width: 660px;
     width: 100%;
     min-height: 374px;
-  }
-
-  @media (min-width: $tablet) {
-    min-height: 391px;
   }
 
   @media (min-width: $desktop) {
