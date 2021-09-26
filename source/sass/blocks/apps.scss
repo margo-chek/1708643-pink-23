@@ -36,6 +36,14 @@
   }
 }
 
+.page-header--opened .apps {
+  margin-top: -3px;
+
+  @media (min-width: $tablet) {
+    margin-top: -1px;
+  }
+}
+
 .apps__title {
   color: $color-white;
   width: 100%;
