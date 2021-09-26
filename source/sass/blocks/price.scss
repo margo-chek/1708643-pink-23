@@ -4,18 +4,18 @@
   width: 100%;
   min-width: $mobile;
   background-color: $color-grey-background;
-  overflow-x: hidden;
   position: relative;
+  padding: 75px 0 0;
 
   @media (min-width: $tablet) {
     min-width: $tablet;
     display: flex;
-    padding-bottom: 70px;
+    padding: 49px 0 69px;
   }
 
   @media (min-width: $desktop) {
     min-width: $desktop;
-    padding-bottom: 98px;
+    padding: 65px 0 97px;
   }
 }
 
@@ -26,13 +26,12 @@
   background-position: center top;
   background-repeat: no-repeat;
   position: absolute;
-  top: -70px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: -39px;
+  left: 0;
+  right: 0;
   z-index: -1;
   width: 100%;
-  min-width: $mobile;
-  height: 98px;
+  height: 39px;
 
   @media (min-width: $tablet) {
     background-image: url("../img/grey-background-mask-bottom-tablet.svg");
@@ -42,25 +41,29 @@
 
   @media (min-width: $desktop) {
     background-image: url("../img/grey-background-mask-bottom-desktop.svg");
-    top: -120px;
-    height: 160px;
+    top: -124px;
+    height: 168px;
+    background-size: cover;
   }
 }
 
 .price__wrapper {
   overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .price__list {
   background-color: $color-white;
-  margin-left: -486px;
   position: relative;
   border-collapse: collapse;
   width: 100%;
 
   @media (min-width: $tablet) {
     margin: 0 auto;
-    width: 616px;
+    width: 620px;
   }
 
   @media (min-width: $desktop) {
@@ -81,6 +84,7 @@ td {
   @media (min-width: $tablet) {
     width: 150px;
     height: 45px;
+    padding: 0;
   }
 
   @media (min-width: $desktop) {
@@ -120,17 +124,17 @@ tr:nth-child(1) td:nth-child(3)::after {
 
 .price__rate {
   background-color: $color-grey;
-  height: 94px;
-  padding-top: 14px;
+  height: 98px;
+  padding-top: 12px;
 
   @media (min-width: $tablet) {
-    height: 75px;
-    padding-top: 10px;
+    height: 80px;
+    padding-top: 13px;
   }
 
   @media (min-width: $desktop) {
-    height: 94px;
-    padding-top: 14px;
+    height: 98px;
+    padding-top: 16px;
   }
 }
 
@@ -156,6 +160,7 @@ tr:nth-child(1) td:nth-child(3)::after {
     padding-left: 22px;
     min-width: 232px;
     text-transform: none;
+    font-size: 18px;
   }
 
   &--mobile {
@@ -172,6 +177,14 @@ tr:nth-child(1) td:nth-child(3)::after {
 
   &--empty {
     background-color: $color-grey-background;
+  }
+}
+
+.price__name--none {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: table-cell;
   }
 }
 
@@ -195,13 +208,13 @@ tr:nth-child(1) td:nth-child(3)::after {
 
   @media (min-width: $tablet) {
     justify-content: center;
-    width: 150px;
-    height: 43px;
+    width: 153px;
+    height: 44px;
   }
 
   @media (min-width: $desktop) {
-    width: 211px;
-    height: 57px;
+    width: 234px;
+    height: 58px;
   }
 }
 
@@ -213,10 +226,11 @@ tr:nth-child(1) td:nth-child(3)::after {
   text-align: center;
   text-transform: uppercase;
   color: $color-white;
-  margin: 0;
+  margin: 0 0 -3px;
 
   @media (min-width: $desktop) {
     font-size: 18px;
+    margin: 0;
   }
 }
 
@@ -240,7 +254,7 @@ tr:nth-child(1) td:nth-child(3)::after {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 45px 0 49px;
+  padding: 43px 0 46px;
 
   @media (min-width: $tablet) {
     display: none;

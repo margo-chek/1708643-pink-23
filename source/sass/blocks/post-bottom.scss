@@ -8,7 +8,6 @@
 
   @media (min-width: $desktop) {
     width: 936px;
-    margin-top: -30px;
   }
 }
 
@@ -17,14 +16,15 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  padding: 29px 0 72px;
+  padding: 20px 0 27px;
 
   @media (min-width: $tablet) {
     font-size: 18px;
-    padding: 53px 0 78px;
+    padding: 27px 0 52px;
   }
 
   @media (min-width: $desktop) {
-    padding: 14px 0 75px;
+    padding: 3px 0 49px;
+    margin-top: 0;
   }
 }

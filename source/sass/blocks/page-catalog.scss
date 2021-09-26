@@ -7,7 +7,7 @@
   min-width: $mobile;
 
   @media (min-width: $tablet) {
-    margin-top: -110px;
+    margin: -110px auto -6px;
   }
 }
 
@@ -16,7 +16,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 237px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-tablet@2x.png");
@@ -26,13 +25,10 @@
     min-width: 660px;
     width: 100%;
     background-image: url("../img/back_tablet.png");
+    background-position: top;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-tablet@2x.png");
-    }
-
-    @media (min-width: $desktop) {
-      height: 420px;
     }
   }
 
@@ -54,16 +50,16 @@
   font-size: 24px;
   line-height: 33px;
   text-align: center;
-  padding: 94px 0 76px;
+  padding: 94px 0 77px;
   margin: 0;
 
   @media (min-width: $tablet) {
     font-size: 50px;
     line-height: 68px;
-    padding: 191px 0 143px;
+    padding: 176px 0 128px;
   }
 
   @media (min-width: $desktop) {
-    padding: 183px 0 89px;
+    padding: 169px 0 89px;
   }
 }

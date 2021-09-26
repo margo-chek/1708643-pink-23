@@ -5,12 +5,7 @@
 .photo-catalog__list {
   margin: 0;
   padding: 0;
-
-  @media (min-width: $tablet) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+  list-style: none;
 
   @media (min-width: $desktop) {
     width: 1200px;
@@ -18,25 +13,10 @@
   }
 }
 
-.photo-catalog__item {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  flex-wrap: wrap;
-}
-
-.photo-catalog__item:not(:first-child) {
-  margin: 0;
-
-  @media (min-width: $desktop) {
-    padding-bottom: 33px;
-  }
-}
-
 .photo-catalog__item--panorama .photo-catalog__description {
   width: 280px;
-  padding-right: 13px;
-  margin: -7px auto 0;
+  padding: 18px 10px 18px 17px;
+  margin: 0 auto;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -45,16 +25,14 @@
     justify-content: space-between;
     width: 620px;
     margin: 0 auto;
+    padding: 22px 30px 23px 29px;
   }
 
   @media (min-width: $desktop) {
     width: 940px;
     margin: 0 auto 29px;
+    padding: 25px 30px 23px 29px;
   }
-}
-
-.photo-catalog__item--panorama {
-  position: relative;
 }
 
 .photo-catalog__item--panorama::after {
@@ -81,9 +59,20 @@
   }
 }
 
+.photo-catalog__item--panorama img {
+  width: 100%;
+
+  @media (min-width: $desktop) {
+    height: 503px;
+    object-fit: cover;
+  }
+}
+
 .photo-catalog__wrapper {
   width: 280px;
   margin: 0 auto;
+  list-style: none;
+  padding: 0;
 
   @media (min-width: $tablet) {
     width: 620px;
@@ -104,43 +93,44 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-  padding: 25px 10px 18px 17px;
+  padding: 18px 10px 18px 17px;
   background-color: $color-grey-background;
 
   @media (min-width: $tablet) {
     padding: 25px 10px 26px 17px;
+    margin-bottom: 0;
   }
 }
 
 .photo-catalog__wrapper .photo-catalog__description {
-  min-height: 121px;
-  margin-top: -8px;
-
   @media (min-width: $tablet) {
     min-height: 155px;
-    padding: 30px 10px 31px 30px;
-    margin-top: 0;
+    padding: 23px 30px;
   }
 
   @media (min-width: $desktop) {
     min-height: 154px;
-    padding: 20px 10px 20px 26px;
+    padding: 21px 32px 20px 26px;
   }
 }
 
-.photo-catalog__wrapper .photo-catalog__item {
-  margin-top: 24px;
+.photo-catalog__item {
+  margin-bottom: 21.5px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
 
   @media (min-width: $desktop) {
-    margin-top: 0;
+    margin: 0 0 52px;
   }
 }
 
-.photo-catalog__wrapper .photo-catalog__item:first-child {
-  margin-top: 29px;
+.photo-catalog__item--panorama {
+  position: relative;
 
-  @media (min-width: $desktop) {
-    margin-top: 0;
+  @media (min-width: $tablet) {
+    margin-bottom: 50px;
   }
 }
 
@@ -151,18 +141,6 @@
 
   @media (min-width: $desktop) {
     margin: 0;
-  }
-}
-
-.photo-catalog__item--panorama .photo-catalog__author:first-child {
-  @media (min-width: $tablet) {
-    margin-left: 30px;
-    margin-top: -3px;
-  }
-
-  @media (min-width: $desktop) {
-    margin-left: 10px;
-    margin-bottom: 0;
   }
 }
 
@@ -180,19 +158,19 @@
   margin: 0 0 12px;
 
   @media (min-width: $tablet) {
-    margin: 14px 0 27px;
+    margin: -1px 0 13px;
   }
 }
 
 .photo-catalog__item--panorama .photo-catalog__name {
   @media (min-width: $tablet) {
     order: 3;
-    margin: 14px 30px 11px;
+    margin: -1px 0 0;
   }
 
   @media (min-width: $desktop) {
     order: 3;
-    margin: -2px 10px 0;
+    margin: -2px -1px 0;
     min-height: 10px;
   }
 }
@@ -220,7 +198,7 @@
   &::after {
     position: absolute;
     min-height: 13px;
-    width: 100%;
+    width: 13px;
     left: 0;
     content: "";
     bottom: 4px;
@@ -231,23 +209,25 @@
 
 .photo-catalog__item--panorama .photo-catalog__like {
   @media (min-width: $tablet) {
-    padding-right: 39px;
+    padding: 4px 29px 0 0;
   }
 
   @media (min-width: $desktop) {
-    padding-right: 50px;
+    padding-right: 30px;
     margin-top: -3px;
   }
 
   &::after {
     @media (min-width: $tablet) {
-      left: 132px;
+      left: inherit;
+      right: 0;
       bottom: 5px;
     }
 
     @media (min-width: $desktop) {
-      left: 136px;
+      left: inherit;
       bottom: 6px;
+      right: 0;
     }
   }
 }
@@ -259,8 +239,9 @@
 
   &::after {
     @media (min-width: $tablet) {
-      left: 230px;
-      bottom: 4px;
+      left: inherit;
+      right: 0;
+      bottom: 6px;
     }
   }
 }

@@ -5,42 +5,41 @@
   min-width: $mobile;
   height: 100%;
   position: relative;
-  top: 75px;
-  margin-bottom: 75px;
+  margin-bottom: 48px;
 
   @media (min-width: $tablet) {
     min-width: 660px;
     width: 100%;
     display: flex;
+    margin-bottom: -6px;
   }
 
   @media (min-width: $desktop) {
     min-width: $desktop;
     width: 100%;
+    margin-bottom: 28px;
   }
 
   &::before {
     content: "";
     background-image: url("../img/triangle-map.svg");
-    background-position: center top -80px;
+    background-position: center top -56px;
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     z-index: 1;
     width: 100%;
-    max-width: 1200px;
     height: 123px;
-    overflow-x: hidden;
+    background-size: cover;
 
     @media (min-width: $tablet) {
-      background-position: center top -36px;
+      background-position: center top -37px;
     }
 
     @media (min-width: $desktop) {
       background-image: url("../img/triangle-map-desktop.svg");
-      background-position: center top -20px;
+      background-position: center top -22px;
     }
   }
 }
@@ -50,6 +49,10 @@
     min-width: 660px;
     width: 100%;
     min-height: 374px;
+  }
+
+  @media (min-width: $tablet) {
+    min-height: 391px;
   }
 
   @media (min-width: $desktop) {

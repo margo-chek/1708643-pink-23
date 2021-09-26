@@ -4,14 +4,13 @@
   @media (min-width: $desktop) {
     width: 100%;
     background-color: $color-white;
-    margin-top: -26px;
+    margin-bottom: 66px;
   }
 }
 
 .edit-wrapper {
   background-color: $color-grey-background;
-  padding: 6px 20px 54px;
-  margin-top: -31px;
+  padding: 20px 20px 54px;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -28,6 +27,13 @@
 
 .edit__photo {
   flex-shrink: 0;
+  width: 280px;
+  margin: 0 auto;
+  display: block;
+
+  @media (min-width: $tablet) {
+    width: auto;
+  }
 }
 
 .edit__info {
@@ -35,7 +41,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 8px 0 0 45px;
+    padding: 3px 0 0 45px;
     width: 325px;
   }
 
@@ -47,18 +53,36 @@
 
 .edit__tool-list {
   display: flex;
-  justify-content: center;
-  margin: 42px 0 0;
-  padding: 0 0 56px;
+  margin: 42px auto 0;
+  padding: 0 36px 49px;
   position: relative;
+  width: 280px;
 
   @media (min-width: $tablet) {
     flex-direction: column;
-    margin: 12px 0 0;
+    margin: 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop) {
     margin: 0;
+    width: auto;
+  }
+}
+
+.edit__tool-item:not(:first-child) {
+  @media (min-width: $tablet) {
+    margin: 20px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 15px 0 0;
+  }
+}
+
+.edit__tool-item:last-child {
+  @media (min-width: $desktop) {
+    border: none;
   }
 }
 
@@ -70,37 +94,18 @@
   @media (min-width: $tablet) {
     position: relative;
     display: flex;
-    padding-right: 18px;
-  }
-
-  @media (min-width: $desktop) {
-    padding-right: 30px;
-  }
-}
-
-.edit__tool-item:not(:last-child) {
-  margin-right: 35px;
-
-  @media (min-width: $tablet) {
+    padding: 0 18px 22px 0;
     margin-right: 0;
-    padding-bottom: 24px;
     border-bottom: 1px solid rgba(40, 54, 69, 0.1);
   }
 
   @media (min-width: $desktop) {
-    padding-bottom: 14px;
-    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+    padding: 0 30px 14px 0;
   }
 }
 
-.edit__tool-item:not(:first-child) {
-  @media (min-width: $tablet) {
-    margin: 25px 0 0;
-  }
-
-  @media (min-width: $desktop) {
-    margin: 30px 0 0;
-  }
+.edit__photo-img {
+  flex-shrink: 0;
 }
 
 .edit__range-controls {
@@ -112,7 +117,7 @@
   @media (min-width: $tablet) {
     align-items: center;
     display: flex;
-    margin-left: 29px;
+    margin: 0 0 0 29px;
     width: 100%;
   }
 
@@ -136,14 +141,19 @@
 
 .edit__scale {
   height: 2px;
-  width: 100%;
+  margin: 0 auto;
+  width: calc(100% - 40px);
   background-color: $color-grey;
+
+  @media (min-width: $tablet) {
+    width: calc(100% - 10px);
+  }
 }
 
 .edit__toggle {
   position: absolute;
-  top: -6px;
-  left: 208px;
+  top: -5px;
+  left: 213px;
   width: 14px;
   height: 14px;
   padding: 0;
@@ -154,58 +164,80 @@
 
 .edit__tool-item:nth-child(1) .edit__toggle {
   @media (min-width: $tablet) {
-    top: 4px;
-    left: 152px;
+    top: 9px;
+    left: 164px;
   }
 
   @media (min-width: $desktop) {
-    top: 7px;
-    left: 236px;
+    top: 13px;
+    left: 238px;
   }
 }
 
 .edit__tool-item:nth-child(2) .edit__toggle {
   @media (min-width: $tablet) {
-    top: 4px;
-    left: 40px;
+    top: 9px;
+    left: 27px;
   }
 
   @media (min-width: $desktop) {
-    top: 6px;
-    left: 48px;
+    top: 14px;
+    left: 36px;
   }
 }
 
 .edit__tool-item:nth-child(3) .edit__toggle {
   @media (min-width: $tablet) {
-    top: 4px;
-    left: 96px;
+    top: 9px;
+    left: 100px;
   }
 
   @media (min-width: $desktop) {
-    top: 4px;
-    left: 136px;
+    top: 9px;
+    left: 147px;
+  }
+}
+
+.edit__tool-item:nth-child(3) .edit__photo-img {
+  @media (min-width: $tablet) {
+    margin-left: 6px;
   }
 }
 
 .edit__buttons {
   background-color: $color-grey-background;
   width: 100%;
-  margin: 18px 0 0;
+  margin: 27px 0 0;
   padding-top: 0;
-  border-top: 1px solid rgba(40, 54, 69, 0.3);
+  position: relative;
 
   @media (min-width: $tablet) {
     border: none;
     display: flex;
     margin: 0 auto;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    left: -20px;
+    height: 1px;
+    background-color: rgba(40, 54, 69, 0.3);
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
 }
 
 .edit__buttons-wrapper {
-  margin: 38px auto 0;
+  margin: 25px auto 0;
+  padding-top: 38px;
   display: flex;
   flex-direction: column;
+  width: 280px;
 
   @media (min-width: $tablet) {
     margin: 0 auto;
@@ -213,6 +245,7 @@
 
   @media (min-width: $desktop) {
     flex-direction: row;
+    width: auto;
   }
 }
 

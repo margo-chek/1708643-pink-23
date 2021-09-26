@@ -25,7 +25,7 @@
           <div class="page-header__wrapper">
             <ul class="page-header__list">
               <li class="page-header__item">
-                <a class="page-header__link page-header__link--active">Главная</a>
+                <a class="page-header__link">Главная</a>
               </li>
               <li class="page-header__item">
                 <a class="page-header__link" href="catalog.html">Фотографии</a>
@@ -46,12 +46,13 @@
       <h1 class="visually-hidden">Мобильное приложение Пинк - раскрась серые будни в розовый цвет!</h1>
       <section class="apps">
         <div class="wrapper">
-        <h2 class="apps__title">Взгляните на жизнь иначе!</h2>
-        <picture class="apps__img">
-          <source media="(min-width: 1200px)" srcset="img/phone-group_2.png 1x, img/phone-group_2@2x.png 2x">
-          <source media="(min-width: 660px)" srcset="img/phone-group_1.png 1x, img/phone-group_1@2x.png 2x">
-          <img src="img/phone-group.png" srcset="img/phone-group@2x.png 2x" width="100%" height="100%" alt="Телефон">
-        </picture>
+          <h2 class="apps__title">Взгляните на жизнь иначе!</h2>
+          <picture class="apps__img">
+            <source media="(min-width: 1200px)" srcset="img/phone-group_2.png 1x, img/phone-group_2@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/phone-group_1.png 1x, img/phone-group_1@2x.png 2x">
+            <img src="img/phone-group.png" srcset="img/phone-group@2x.png 2x" width="100%" height="100%" alt="Телефон">
+          </picture>
+        </div>
         <div class="apps__mobile">
           <a class="apps__button button" href="#">Скачать приложение</a>
           <div class="apps__select">
@@ -84,40 +85,43 @@
           </div>
           <p class="apps__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-        </div>
       </section>
 
       <section class="advantages">
         <div class="advantages__block">
-          <h2 class="advantages__block-title">Устали от серости мегаполиса?</h2>
-          <h2 class="advantages__block-title">Нам есть, что вам<br>предложить!</h2>
+          <div class="wrapper">
+            <h2 class="advantages__block-title">Устали от серости мегаполиса?</h2>
+            <h2 class="advantages__block-title">Нам есть, что вам<br>предложить!</h2>
+          </div>
         </div>
         <div class="advantages__wrapper">
-        <ul class="advantages__list">
-          <li class="advantages__item advantages__item--mood">
-            <picture class="advantages__img">
-              <img src="img/iphone-desktop-1.png" srcset="img/iphone-desktop-1@2x.png 2x" width="100%" height="100%" alt="Айфон настроение">
-            </picture>
-            <h3 class="advantages__title">Поднимает настроение</h3>
-            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="advantages__item advantages__item--world">
-            <picture class="advantages__img">
-              <img src="img/iphone-desktop-2.png" srcset="img/iphone-desktop-2@2x.png 2x" width="100%" height="100%" alt="Айфон мир">
-            </picture>
-            <h3 class="advantages__title">Меняет мир вокруг</h3>
-            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="advantages__item advantages__item--friends">
-            <picture class="advantages__img">
-              <source media="(min-width: 1200px)" srcset="img/iphone-desktop.png 1x, img/iphone-desktop@2x.png 2x">
-              <source media="(min-width: 660px)" srcset="img/iphone-tablet-group.png 1x, img/iphone-tablet-group@2x.png 2x">
-              <img src="img/iphone-mobile-group.png" srcset="img/iphone-mobile-group@2x.png 2x" width="100%" height="100%" alt="Айфон">
-            </picture>
-            <h3 class="advantages__title">Заводит новых друзей</h3>
-            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
+          <div class="wrapper">
+            <ul class="advantages__list">
+              <li class="advantages__item advantages__item--mood">
+                <picture class="advantages__img">
+                  <img src="img/iphone-desktop-1.png" srcset="img/iphone-desktop-1@2x.png 2x" width="100%" height="100%" alt="Айфон настроение">
+                </picture>
+                <h3 class="advantages__title">Поднимает настроение</h3>
+                <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="advantages__item advantages__item--world">
+                <picture class="advantages__img">
+                  <img src="img/iphone-desktop-2.png" srcset="img/iphone-desktop-2@2x.png 2x" width="100%" height="100%" alt="Айфон мир">
+                </picture>
+                <h3 class="advantages__title">Меняет мир вокруг</h3>
+                <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="advantages__item advantages__item--friends">
+                <picture class="advantages__img">
+                  <source media="(min-width: 1200px)" srcset="img/iphone-desktop.png 1x, img/iphone-desktop@2x.png 2x">
+                  <source media="(min-width: 660px)" srcset="img/iphone-tablet-group.png 1x, img/iphone-tablet-group@2x.png 2x">
+                  <img src="img/iphone-mobile-group.png" srcset="img/iphone-mobile-group@2x.png 2x" width="100%" height="100%" alt="Айфон">
+                </picture>
+                <h3 class="advantages__title">Заводит новых друзей</h3>
+                <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -129,7 +133,7 @@
             <img src="img/banner24-tablet.svg" alt="Таймер">
           </picture>
           <div class="banner__text">
-            <h3 class="banner__title">Эффект на 24 часа!</h3>
+            <h3 class="banner__title"><span class="banner__title-add">Эффект</span> на 24 часа!</h3>
             <p class="banner__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
             <a class="banner__link" href="#">Узнать больше об исследовании</a>
           </div>
@@ -169,7 +173,7 @@
           <h2 class="visually-hidden">Прайс</h2>
           <table class="price__list slider__list">
             <tr class="slider__item">
-              <th class="price__name price__name--empty"></th>
+              <th class="price__name price__name--empty  price__name--none"></th>
               <td>
                 <header class="price__rate">
                   <p class="rate-name">База</p>
@@ -190,7 +194,7 @@
               </td>
             </tr>
             <tr class="slider__item">
-              <th class="price__name">Розовый фильтр</th>
+              <th class="price__name price__name--none">Розовый фильтр</th>
               <td class="price__value">
                 <div class="price__mobile-wrapper">
                   <span class="price__name--mobile">Розовый фильтр</span>
@@ -211,7 +215,7 @@
               </td>
             </tr>
             <tr class="slider__item">
-              <th class="price__name">Смайлики</th>
+              <th class="price__name  price__name--none">Смайлики</th>
               <td class="price__value">
                 <div class="price__mobile-wrapper">
                   <span class="price__name--mobile">Смайлики</span>
@@ -232,7 +236,7 @@
               </td>
             </tr>
             <tr class="slider__item">
-              <th class="price__name">Комментарии</th>
+              <th class="price__name  price__name--none">Комментарии</th>
               <td class="price__value">
                 <div class="price__mobile-wrapper">
                   <span class="price__name--mobile">Комментарии</span>
@@ -266,7 +270,7 @@
           <div class="contacts__date">
             <p class="contacts__phone">
               Звоните:
-              <a class="phone" href="tel:+74956660166">+7(495) 666-01-66</a>
+              <a class="phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </p>
             <p class="contacts__email">
               Пишите:

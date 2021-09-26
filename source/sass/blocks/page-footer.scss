@@ -11,10 +11,12 @@
   @media (min-width: $tablet) {
     flex-direction: row;
     margin: 38px auto 0;
+    padding-bottom: 40px;
   }
 
   @media (min-width: $desktop) {
     margin-top: 41px;
+    padding-bottom: 75px;
   }
 }
 

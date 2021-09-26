@@ -43,20 +43,20 @@
   font-size: 24px;
   line-height: 120%;
   text-align: center;
-  padding: 95px 20px 34px;
+  padding: 93px 20px 30px;
   margin: 0;
 
   @media (min-width: $tablet) {
     width: 184px;
-    margin-left: 58px;
-    padding: 182px 0 34px;
+    margin-left: 56px;
+    padding: 206px 0 0;
     font-size: 40px;
   }
 
   @media (min-width: $desktop) {
     width: 230px;
     margin-left: 28px;
-    padding: 182px 0 34px;
+    padding: 208px 0 0;
     font-size: 50px;
     line-height: 68px;
   }
@@ -73,17 +73,23 @@
   }
 
   @media (min-width: $desktop) {
-    right: 0;
+    right: 4px;
   }
 }
 
 .apps__mobile {
   background-color: $color-grey;
-  padding: 38px 0;
+  padding: 28px 0;
 
   @media (min-width: $tablet) {
     background-color: transparent;
     padding: 0;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: 936px;
   }
 }
 
@@ -110,16 +116,20 @@
   border: 3px solid $color-white;
   box-sizing: border-box;
   border-radius: 29px;
-  margin: 28px auto 32px;
-  padding: 21px 35px;
+  margin: 0 auto 32px;
+  padding: 15px 35px;
   text-decoration: none;
 
   @media (min-width: $tablet) {
-    margin: 39px 0 46px;
+    margin: 28px 0 46px;
+    width: 300px;
+    padding: 15px 45px 16px;
   }
 
   @media (min-width: $desktop) {
-    margin: 39px 0 46px 2px;
+    margin: 37px 0 65px 0;
+    font-size: 21px;
+    padding: 15px 24px 16px;
   }
 }
 
@@ -137,11 +147,11 @@
   list-style-type: none;
 
   @media (min-width: $tablet) {
-    margin-left: 30px;
+    margin-left: 46px;
   }
 
   @media (min-width: $desktop) {
-    margin-left: 32px;
+    margin-left: 46px;
   }
 }
 
@@ -155,8 +165,7 @@
 }
 
 .apps__description {
-  display: flex;
-  margin: 24px 20px 38px;
+  margin: 14px 20px 3px;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -166,12 +175,14 @@
   padding: 0 8px;
 
   @media (min-width: $tablet) {
-    margin: 38px 0 119px;
-    width: 300px;
+    margin: 25px 0 113px;
+    width: 299px;
+    font-size: 18px;
+    padding: 0;
   }
 
   @media (min-width: $desktop) {
-    margin: 38px 0 119px 2px;
+    margin: 47px 0 125px -1px;
   }
 }
 
