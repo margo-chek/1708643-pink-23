@@ -1,3 +1,49 @@
-.no-js {
+@media (max-width: $desktop - 1) {
+  .no-js .page-header {
+    background-color: $color-grey;
+    box-shadow: 0 1px 0 $color-black;
+    width: 100%;
+  }
 
+  .no-js .page-header .page-header__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    color: $color-white;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .no-js .page-header__item {
+    background: $color-grey;
+    box-shadow: 0 1px 0 $color-black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .no-js .page-header__link {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+    align-items: center;
+    text-transform: uppercase;
+    color: $color-white;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .no-js .page-header__toggle {
+    display: none;
+  }
 }

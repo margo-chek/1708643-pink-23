@@ -1,11 +1,10 @@
+document.querySelector('.no-js').classList.remove('no-js');
+
 document.addEventListener('DOMContentLoaded', function () {
   if (document.querySelector('.page-header__toggle')) {
     const headerMain = document.querySelector('.page-header');
     const navMain = document.querySelector('.page-header__nav');
     const navToggle = document.querySelector('.page-header__toggle');
-    // Убираем класс
-    navMain.classList.remove('page-header__nav--nojs');
-    // Добавляем обработчик события для кнопки
     navToggle.addEventListener('click', function (event) {
       event.preventDefault();
       if (headerMain.classList.contains('page-header--closed')) {
@@ -17,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
-
 });
 
 
